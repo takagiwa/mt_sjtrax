@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="VIO">
+        <Dashboard columnResizable="1" key="VIO" rowResizable="0" title="VIO">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="1" height="777"
+                layout="JideBoxLayout" vgap="6" width="970">
+                <Gadget height="455" key="VIO Probes" name="VIO Probes" width="970">
+                    <Probe core="hw_vio_3" name="s_init_mon[7:0]"/>
+                    <Probe core="hw_vio_3" name="s_vio_uart_probe_in0[8:0]"/>
+                    <Probe core="hw_vio_3" name="s_vio_uart_probe_out0[8:0]"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

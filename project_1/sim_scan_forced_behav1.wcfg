@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_scan_forced_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_scan_forced" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="84" />
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/force_run" type="logic">
+      <obj_property name="ElementShortName">force_run</obj_property>
+      <obj_property name="ObjectShortName">force_run</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/m_top" type="array">
+      <obj_property name="ElementShortName">m_top[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_top[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/m_bottom" type="array">
+      <obj_property name="ElementShortName">m_bottom[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_bottom[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/m_left" type="array">
+      <obj_property name="ElementShortName">m_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_left[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/m_right" type="array">
+      <obj_property name="ElementShortName">m_right[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_right[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/map_ready" type="logic">
+      <obj_property name="ElementShortName">map_ready</obj_property>
+      <obj_property name="ObjectShortName">map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/req" type="array">
+      <obj_property name="ElementShortName">req[2:0]</obj_property>
+      <obj_property name="ObjectShortName">req[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/ack" type="array">
+      <obj_property name="ElementShortName">ack[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/key" type="array">
+      <obj_property name="ElementShortName">key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/value" type="array">
+      <obj_property name="ElementShortName">value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/res" type="array">
+      <obj_property name="ElementShortName">res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/res_v" type="logic">
+      <obj_property name="ElementShortName">res_v</obj_property>
+      <obj_property name="ObjectShortName">res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/notfound" type="logic">
+      <obj_property name="ElementShortName">notfound</obj_property>
+      <obj_property name="ObjectShortName">notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_map_ready" type="logic">
+      <obj_property name="ElementShortName">color_map_ready</obj_property>
+      <obj_property name="ObjectShortName">color_map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_req" type="array">
+      <obj_property name="ElementShortName">color_req[4:0]</obj_property>
+      <obj_property name="ObjectShortName">color_req[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_ack" type="array">
+      <obj_property name="ElementShortName">color_ack[4:0]</obj_property>
+      <obj_property name="ObjectShortName">color_ack[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_key" type="array">
+      <obj_property name="ElementShortName">color_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_value" type="array">
+      <obj_property name="ElementShortName">color_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_wr_en" type="logic">
+      <obj_property name="ElementShortName">color_wr_en</obj_property>
+      <obj_property name="ObjectShortName">color_wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_rd_en" type="logic">
+      <obj_property name="ElementShortName">color_rd_en</obj_property>
+      <obj_property name="ObjectShortName">color_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_res" type="array">
+      <obj_property name="ElementShortName">color_res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_res_v" type="logic">
+      <obj_property name="ElementShortName">color_res_v</obj_property>
+      <obj_property name="ObjectShortName">color_res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/color_notfound" type="logic">
+      <obj_property name="ElementShortName">color_notfound</obj_property>
+      <obj_property name="ObjectShortName">color_notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/force_x" type="array">
+      <obj_property name="ElementShortName">force_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">force_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/force_y" type="array">
+      <obj_property name="ElementShortName">force_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">force_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/force_tile" type="array">
+      <obj_property name="ElementShortName">force_tile[3:0]</obj_property>
+      <obj_property name="ObjectShortName">force_tile[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/force_v" type="logic">
+      <obj_property name="ElementShortName">force_v</obj_property>
+      <obj_property name="ObjectShortName">force_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/s_map_key" type="array">
+      <obj_property name="ElementShortName">s_map_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/s_color_map_key" type="array">
+      <obj_property name="ElementShortName">s_color_map_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_map_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/manual_key" type="array">
+      <obj_property name="ElementShortName">manual_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">manual_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/manual_color_key" type="array">
+      <obj_property name="ElementShortName">manual_color_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">manual_color_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider4390">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_top" type="array">
+      <obj_property name="ElementShortName">r_top[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_top[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_bottom" type="array">
+      <obj_property name="ElementShortName">r_bottom[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_bottom[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_right" type="array">
+      <obj_property name="ElementShortName">r_right[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_right[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_left" type="array">
+      <obj_property name="ElementShortName">r_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_left[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_run" type="logic">
+      <obj_property name="ElementShortName">r_run</obj_property>
+      <obj_property name="ObjectShortName">r_run</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/c_x" type="array">
+      <obj_property name="ElementShortName">c_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/c_y" type="array">
+      <obj_property name="ElementShortName">c_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_color_v_out" type="logic">
+      <obj_property name="ElementShortName">r_color_v_out</obj_property>
+      <obj_property name="ObjectShortName">r_color_v_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_around_v" type="logic">
+      <obj_property name="ElementShortName">r_around_v</obj_property>
+      <obj_property name="ObjectShortName">r_around_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/c_seq" type="other">
+      <obj_property name="ElementShortName">c_seq</obj_property>
+      <obj_property name="ObjectShortName">c_seq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_lr" type="logic">
+      <obj_property name="ElementShortName">r_equ_lr</obj_property>
+      <obj_property name="ObjectShortName">r_equ_lr</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_lu" type="logic">
+      <obj_property name="ElementShortName">r_equ_lu</obj_property>
+      <obj_property name="ObjectShortName">r_equ_lu</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_ld" type="logic">
+      <obj_property name="ElementShortName">r_equ_ld</obj_property>
+      <obj_property name="ObjectShortName">r_equ_ld</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_ru" type="logic">
+      <obj_property name="ElementShortName">r_equ_ru</obj_property>
+      <obj_property name="ObjectShortName">r_equ_ru</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_rd" type="logic">
+      <obj_property name="ElementShortName">r_equ_rd</obj_property>
+      <obj_property name="ObjectShortName">r_equ_rd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_equ_ud" type="logic">
+      <obj_property name="ElementShortName">r_equ_ud</obj_property>
+      <obj_property name="ObjectShortName">r_equ_ud</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nequ_ld" type="logic">
+      <obj_property name="ElementShortName">r_nequ_ld</obj_property>
+      <obj_property name="ObjectShortName">r_nequ_ld</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nequ_rd" type="logic">
+      <obj_property name="ElementShortName">r_nequ_rd</obj_property>
+      <obj_property name="ObjectShortName">r_nequ_rd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nequ_ru" type="logic">
+      <obj_property name="ElementShortName">r_nequ_ru</obj_property>
+      <obj_property name="ObjectShortName">r_nequ_ru</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nzero_l" type="logic">
+      <obj_property name="ElementShortName">r_nzero_l</obj_property>
+      <obj_property name="ObjectShortName">r_nzero_l</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nzero_r" type="logic">
+      <obj_property name="ElementShortName">r_nzero_r</obj_property>
+      <obj_property name="ObjectShortName">r_nzero_r</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nzero_u" type="logic">
+      <obj_property name="ElementShortName">r_nzero_u</obj_property>
+      <obj_property name="ObjectShortName">r_nzero_u</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_nzero_d" type="logic">
+      <obj_property name="ElementShortName">r_nzero_d</obj_property>
+      <obj_property name="ObjectShortName">r_nzero_d</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced" type="array">
+      <obj_property name="ElementShortName">r_forced[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced_delay" type="array">
+      <obj_property name="ElementShortName">r_forced_delay[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced_delay[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced_x_d1" type="array">
+      <obj_property name="ElementShortName">r_forced_x_d1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced_x_d1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced_x_d2" type="array">
+      <obj_property name="ElementShortName">r_forced_x_d2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced_x_d2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced_y_d1" type="array">
+      <obj_property name="ElementShortName">r_forced_y_d1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced_y_d1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_forced_y_d2" type="array">
+      <obj_property name="ElementShortName">r_forced_y_d2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_forced_y_d2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_lookup_v_out" type="array">
+      <obj_property name="ElementShortName">s_lookup_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lookup_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_lookup_v_v" type="logic">
+      <obj_property name="ElementShortName">s_lookup_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_lookup_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_lookup_v_err" type="logic">
+      <obj_property name="ElementShortName">s_lookup_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_lookup_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_lookup_key" type="array">
+      <obj_property name="ElementShortName">s_lookup_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lookup_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_lookup_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_lookup_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_lookup_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_lookup_v_out" type="array">
+      <obj_property name="ElementShortName">r_lookup_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_lookup_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_lookup_v_v" type="logic">
+      <obj_property name="ElementShortName">r_lookup_v_v</obj_property>
+      <obj_property name="ObjectShortName">r_lookup_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_lc" type="array">
+      <obj_property name="ElementShortName">s_getaroundcol_lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_lc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_rc" type="array">
+      <obj_property name="ElementShortName">s_getaroundcol_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_uc" type="array">
+      <obj_property name="ElementShortName">s_getaroundcol_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_dc" type="array">
+      <obj_property name="ElementShortName">s_getaroundcol_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_c_v" type="logic">
+      <obj_property name="ElementShortName">s_getaroundcol_c_v</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_c_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_color_key" type="array">
+      <obj_property name="ElementShortName">s_getaroundcol_color_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_color_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/s_getaroundcol_color_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_getaroundcol_color_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_getaroundcol_color_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_getaroundcol_lc" type="array">
+      <obj_property name="ElementShortName">r_getaroundcol_lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_getaroundcol_lc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_getaroundcol_rc" type="array">
+      <obj_property name="ElementShortName">r_getaroundcol_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_getaroundcol_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_getaroundcol_uc" type="array">
+      <obj_property name="ElementShortName">r_getaroundcol_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_getaroundcol_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_getaroundcol_dc" type="array">
+      <obj_property name="ElementShortName">r_getaroundcol_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_getaroundcol_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_scan_forced/uut/r_getaroundcol_c_v" type="logic">
+      <obj_property name="ElementShortName">r_getaroundcol_c_v</obj_property>
+      <obj_property name="ObjectShortName">r_getaroundcol_c_v</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_traxif_rx_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_traxif_rx" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/din" type="array">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/din_valid" type="logic">
+      <obj_property name="ElementShortName">din_valid</obj_property>
+      <obj_property name="ObjectShortName">din_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/dash_t" type="logic">
+      <obj_property name="ElementShortName">dash_t</obj_property>
+      <obj_property name="ObjectShortName">dash_t</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/dash_w" type="logic">
+      <obj_property name="ElementShortName">dash_w</obj_property>
+      <obj_property name="ObjectShortName">dash_w</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/dash_b" type="logic">
+      <obj_property name="ElementShortName">dash_b</obj_property>
+      <obj_property name="ObjectShortName">dash_b</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/dash_error" type="logic">
+      <obj_property name="ElementShortName">dash_error</obj_property>
+      <obj_property name="ObjectShortName">dash_error</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/note_x" type="array">
+      <obj_property name="ElementShortName">note_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_x[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/note_y" type="array">
+      <obj_property name="ElementShortName">note_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_y[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/note_t" type="array">
+      <obj_property name="ElementShortName">note_t[7:0]</obj_property>
+      <obj_property name="ObjectShortName">note_t[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/note_v" type="logic">
+      <obj_property name="ElementShortName">note_v</obj_property>
+      <obj_property name="ObjectShortName">note_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_traxif_rx/uut/c_seq" type="other">
+      <obj_property name="ElementShortName">c_seq</obj_property>
+      <obj_property name="ObjectShortName">c_seq</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Tue Aug 02 10:26:51 2016
+# Process ID: 12912
+# Current directory: C:/Projects/sjtrax/project_1/project_1.runs/vio_botctrl_synth_1
+# Command line: vivado.exe -log vio_botctrl.vds -mode batch -messageDb vivado.pb -notrace -source vio_botctrl.tcl
+# Log file: C:/Projects/sjtrax/project_1/project_1.runs/vio_botctrl_synth_1/vio_botctrl.vds
+# Journal file: C:/Projects/sjtrax/project_1/project_1.runs/vio_botctrl_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_botctrl.tcl -notrace

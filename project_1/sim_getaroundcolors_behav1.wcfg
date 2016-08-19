@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_getaroundcolors_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_getaroundcolors" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="38" />
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/x_in" type="array">
+      <obj_property name="ElementShortName">x_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/y_in" type="array">
+      <obj_property name="ElementShortName">y_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/v_in" type="logic">
+      <obj_property name="ElementShortName">v_in</obj_property>
+      <obj_property name="ObjectShortName">v_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/lc" type="array">
+      <obj_property name="ElementShortName">lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">lc[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rc" type="array">
+      <obj_property name="ElementShortName">rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rc[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/uc" type="array">
+      <obj_property name="ElementShortName">uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uc[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/dc" type="array">
+      <obj_property name="ElementShortName">dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/c_v" type="logic">
+      <obj_property name="ElementShortName">c_v</obj_property>
+      <obj_property name="ObjectShortName">c_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/map_ready" type="logic">
+      <obj_property name="ElementShortName">map_ready</obj_property>
+      <obj_property name="ObjectShortName">map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/req" type="array">
+      <obj_property name="ElementShortName">req[2:0]</obj_property>
+      <obj_property name="ObjectShortName">req[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/ack" type="array">
+      <obj_property name="ElementShortName">ack[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key" type="array">
+      <obj_property name="ElementShortName">key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/value" type="array">
+      <obj_property name="ElementShortName">value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/res" type="array">
+      <obj_property name="ElementShortName">res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">res[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/res_v" type="logic">
+      <obj_property name="ElementShortName">res_v</obj_property>
+      <obj_property name="ObjectShortName">res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/notfound" type="logic">
+      <obj_property name="ElementShortName">notfound</obj_property>
+      <obj_property name="ObjectShortName">notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_map_ready" type="logic">
+      <obj_property name="ElementShortName">color_map_ready</obj_property>
+      <obj_property name="ObjectShortName">color_map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_req" type="array">
+      <obj_property name="ElementShortName">color_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_req[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_ack" type="array">
+      <obj_property name="ElementShortName">color_ack[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_ack[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key" type="array">
+      <obj_property name="ElementShortName">color_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_value" type="array">
+      <obj_property name="ElementShortName">color_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_wr_en" type="logic">
+      <obj_property name="ElementShortName">color_wr_en</obj_property>
+      <obj_property name="ObjectShortName">color_wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_rd_en" type="logic">
+      <obj_property name="ElementShortName">color_rd_en</obj_property>
+      <obj_property name="ObjectShortName">color_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_res" type="array">
+      <obj_property name="ElementShortName">color_res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_res[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_res_v" type="logic">
+      <obj_property name="ElementShortName">color_res_v</obj_property>
+      <obj_property name="ObjectShortName">color_res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_notfound" type="logic">
+      <obj_property name="ElementShortName">color_notfound</obj_property>
+      <obj_property name="ObjectShortName">color_notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key_1" type="array">
+      <obj_property name="ElementShortName">key_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key_2" type="array">
+      <obj_property name="ElementShortName">key_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key_1" type="array">
+      <obj_property name="ElementShortName">color_key_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key_2" type="array">
+      <obj_property name="ElementShortName">color_key_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/ignore" type="logic">
+      <obj_property name="ElementShortName">ignore</obj_property>
+      <obj_property name="ObjectShortName">ignore</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_full" type="logic">
+      <obj_property name="ElementShortName">color_full</obj_property>
+      <obj_property name="ObjectShortName">color_full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_ignore" type="logic">
+      <obj_property name="ElementShortName">color_ignore</obj_property>
+      <obj_property name="ObjectShortName">color_ignore</obj_property>
+   </wvobject>
+</wave_config>

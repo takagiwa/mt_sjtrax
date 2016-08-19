@@ -1,0 +1,74 @@
+---------------------------------------------------------------------
+                Trax host program (under development)                
+---------------------------------------------------------------------
+
+Requirements:
+  - FreeBSD / Linux / Mac, etc. (Don't know much about Cygwin...)
+  - VT100 compatible terminal
+  - C / C++ compiler
+
+How to build:
+  % make
+
+Programs & Files:
+  - trax-host   : Trax host program CUI (including TCP/serial communication
+  - trax-httpd  : HTTP server for Trax GUI 
+  - trax-player : A randomly playing bot
+  - trax.html   : HTML / JS / CSS for trax-httpd
+  - tests/      : Game logs for test (some logs from http://traxgame.com)
+
+----------------------------------------------------------------------
+                     Running with simple wrapper
+----------------------------------------------------------------------
+
+Make sure trax-host, trax-player and socat is in your PATH.
+
+  - Bot vs Bot
+      % bash ./match.sh bot bot
+
+  - Bot vs your_program (using stdin/stdout)
+      % bash ./match.sh bot path/to/your_program
+      % bash ./match.sh path/to/your_program bot
+
+  - Bot vs TCP (port 10001)
+      % bash ./match.sh bot 10001
+      % bash ./match.sh 10001 bot
+
+  - Bot vs Serial (/dev/cuaU0)
+      % bash ./match.sh bot /dev/cuaU0
+      % bash ./match.sh /dev/cuaU0 bot
+
+----------------------------------------------------------------------
+                    Running without simple wrapper
+----------------------------------------------------------------------
+
+How to run without serial / TCP:
+  - simple console run
+      % ./trax-host -R
+
+  - Log file replay
+      % ./trax-host -R < tests/longest-60.trx
+
+  - simple console run + HTTP GUI (http://your.host:11000/)
+      % ./trax-host -R | ./trax-httpd
+
+  - Log file replay + HTTP GUI (http://your.host:11000/)
+      % ./trax-host -R < tests/longest-60.trx | ./trax-httpd
+
+  With trax-httpd, connect to http://your.host:11000/
+
+How to run with serial / TCP:
+  - Serial vs serial
+      % ./trax-host /dev/cuaU0 /dev/cuaU1
+      % ./trax-host /dev/cuaU0 /dev/cuaU1 | ./trax-httpd
+
+  - Serial vs TCP/10000
+      % ./trax-host /dev/cuaU0 10000
+
+  - Serial autodetect (device listed in trax-comm.c)
+      % ./trax-host
+
+License:
+  - Yasunori Osana <osana@eee.u-ryukyu.ac.jp> wrote this file.
+  - This file is provided "AS IS" in the beerware license rev 42.
+    (see http://people.freebsd.org/~phk/)

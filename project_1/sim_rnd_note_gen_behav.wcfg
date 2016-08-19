@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_rnd_note_gen_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_rnd_note_gen" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="66" />
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/dash_t" type="logic">
+      <obj_property name="ElementShortName">dash_t</obj_property>
+      <obj_property name="ObjectShortName">dash_t</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/save" type="logic">
+      <obj_property name="ElementShortName">save</obj_property>
+      <obj_property name="ObjectShortName">save</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/restore" type="logic">
+      <obj_property name="ElementShortName">restore</obj_property>
+      <obj_property name="ObjectShortName">restore</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/mem_ready" type="array">
+      <obj_property name="ElementShortName">mem_ready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_ready[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/m_left" type="array">
+      <obj_property name="ElementShortName">m_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_left[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/m_right" type="array">
+      <obj_property name="ElementShortName">m_right[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_right[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/m_top" type="array">
+      <obj_property name="ElementShortName">m_top[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_top[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/m_bottom" type="array">
+      <obj_property name="ElementShortName">m_bottom[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_bottom[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/errors" type="array">
+      <obj_property name="ElementShortName">errors[3:0]</obj_property>
+      <obj_property name="ObjectShortName">errors[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/note_x" type="array">
+      <obj_property name="ElementShortName">note_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_x[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/note_y" type="array">
+      <obj_property name="ElementShortName">note_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_y[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/note_t" type="array">
+      <obj_property name="ElementShortName">note_t[7:0]</obj_property>
+      <obj_property name="ObjectShortName">note_t[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/note_v" type="logic">
+      <obj_property name="ElementShortName">note_v</obj_property>
+      <obj_property name="ObjectShortName">note_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/send" type="logic">
+      <obj_property name="ElementShortName">send</obj_property>
+      <obj_property name="ObjectShortName">send</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1767">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/c_seq" type="other">
+      <obj_property name="ElementShortName">c_seq</obj_property>
+      <obj_property name="ObjectShortName">c_seq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/c_note_seq" type="other">
+      <obj_property name="ElementShortName">c_note_seq</obj_property>
+      <obj_property name="ObjectShortName">c_note_seq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/c_wait" type="array">
+      <obj_property name="ElementShortName">c_wait[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c_wait[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_left" type="array">
+      <obj_property name="ElementShortName">r_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_left[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_right" type="array">
+      <obj_property name="ElementShortName">r_right[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_right[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_top" type="array">
+      <obj_property name="ElementShortName">r_top[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_top[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_bottom" type="array">
+      <obj_property name="ElementShortName">r_bottom[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_bottom[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_done" type="logic">
+      <obj_property name="ElementShortName">r_done</obj_property>
+      <obj_property name="ObjectShortName">r_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_left_sig" type="logic">
+      <obj_property name="ElementShortName">s_left_sig</obj_property>
+      <obj_property name="ObjectShortName">s_left_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_left_mag" type="array">
+      <obj_property name="ElementShortName">s_left_mag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_left_mag[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_right_sig" type="logic">
+      <obj_property name="ElementShortName">s_right_sig</obj_property>
+      <obj_property name="ObjectShortName">s_right_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_right_mag" type="array">
+      <obj_property name="ElementShortName">s_right_mag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_right_mag[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_top_sig" type="logic">
+      <obj_property name="ElementShortName">s_top_sig</obj_property>
+      <obj_property name="ObjectShortName">s_top_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_top_mag" type="array">
+      <obj_property name="ElementShortName">s_top_mag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_top_mag[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_bottom_sig" type="logic">
+      <obj_property name="ElementShortName">s_bottom_sig</obj_property>
+      <obj_property name="ObjectShortName">s_bottom_sig</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_bottom_mag" type="array">
+      <obj_property name="ElementShortName">s_bottom_mag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_bottom_mag[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_width" type="array">
+      <obj_property name="ElementShortName">r_width[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_width[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_height" type="array">
+      <obj_property name="ElementShortName">r_height[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_height[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_width_mask" type="array">
+      <obj_property name="ElementShortName">s_width_mask[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_width_mask[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_height_mask" type="array">
+      <obj_property name="ElementShortName">s_height_mask[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_height_mask[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_src" type="array">
+      <obj_property name="ElementShortName">s_prbs_src[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_src[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_width_src" type="array">
+      <obj_property name="ElementShortName">s_prbs_width_src[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_width_src[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_height_src" type="array">
+      <obj_property name="ElementShortName">s_prbs_height_src[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_height_src[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_width_valid" type="logic">
+      <obj_property name="ElementShortName">s_prbs_width_valid</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_width_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_height_valid" type="logic">
+      <obj_property name="ElementShortName">s_prbs_height_valid</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_height_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_prbs_width_valid" type="logic">
+      <obj_property name="ElementShortName">r_prbs_width_valid</obj_property>
+      <obj_property name="ObjectShortName">r_prbs_width_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_prbs_height_valid" type="logic">
+      <obj_property name="ElementShortName">r_prbs_height_valid</obj_property>
+      <obj_property name="ObjectShortName">r_prbs_height_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_prbs_x" type="array">
+      <obj_property name="ElementShortName">r_prbs_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_prbs_x[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_prbs_y" type="array">
+      <obj_property name="ElementShortName">r_prbs_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_prbs_y[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_x_nzero" type="logic">
+      <obj_property name="ElementShortName">s_prbs_x_nzero</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_x_nzero</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_prbs_y_nzero" type="logic">
+      <obj_property name="ElementShortName">s_prbs_y_nzero</obj_property>
+      <obj_property name="ObjectShortName">s_prbs_y_nzero</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_save" type="logic">
+      <obj_property name="ElementShortName">r_save</obj_property>
+      <obj_property name="ObjectShortName">r_save</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_restore" type="logic">
+      <obj_property name="ElementShortName">r_restore</obj_property>
+      <obj_property name="ObjectShortName">r_restore</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_note_x" type="array">
+      <obj_property name="ElementShortName">r_note_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_note_x[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_note_y" type="array">
+      <obj_property name="ElementShortName">r_note_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_note_y[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_note_t" type="array">
+      <obj_property name="ElementShortName">r_note_t[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_note_t[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_note_v" type="logic">
+      <obj_property name="ElementShortName">r_note_v</obj_property>
+      <obj_property name="ObjectShortName">r_note_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_note_ready" type="logic">
+      <obj_property name="ElementShortName">r_note_ready</obj_property>
+      <obj_property name="ObjectShortName">r_note_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_send" type="logic">
+      <obj_property name="ElementShortName">r_send</obj_property>
+      <obj_property name="ObjectShortName">r_send</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/ri_note_x" type="array">
+      <obj_property name="ElementShortName">ri_note_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ri_note_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/ri_note_y" type="array">
+      <obj_property name="ElementShortName">ri_note_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ri_note_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scan" type="array">
+      <obj_property name="ElementShortName">r_scan[17:0]</obj_property>
+      <obj_property name="ObjectShortName">r_scan[17:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scan_clr" type="logic">
+      <obj_property name="ElementShortName">r_scan_clr</obj_property>
+      <obj_property name="ObjectShortName">r_scan_clr</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scan_inc" type="logic">
+      <obj_property name="ElementShortName">r_scan_inc</obj_property>
+      <obj_property name="ObjectShortName">r_scan_inc</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scaned_x" type="array">
+      <obj_property name="ElementShortName">r_scaned_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_scaned_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scaned_y" type="array">
+      <obj_property name="ElementShortName">r_scaned_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_scaned_y[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/r_scaned_t" type="array">
+      <obj_property name="ElementShortName">r_scaned_t[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_scaned_t[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_rnd_note_gen/uut/s_scan_inc" type="logic">
+      <obj_property name="ElementShortName">s_scan_inc</obj_property>
+      <obj_property name="ObjectShortName">s_scan_inc</obj_property>
+   </wvobject>
+</wave_config>

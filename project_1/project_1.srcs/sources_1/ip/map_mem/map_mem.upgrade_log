@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4.2 (win64) Build 1494164 Fri Feb 26 04:18:56 MST 2016
+| Date         : Tue Aug 02 10:26:19 2016
+| Host         : TAKAGIWA-L running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1761-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'map_mem'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of map_mem from xilinx.com:ip:blk_mem_gen:8.2 (Rev. 6) to xilinx.com:ip:blk_mem_gen:8.3 (Rev. 1)
+

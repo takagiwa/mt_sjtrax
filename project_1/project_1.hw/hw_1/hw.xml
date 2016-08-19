@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.4.2 (64-bit)                   -->
+<!--                                                              -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="1">
+  <device name="xc7vx485t_0" gui_info="dashboard1=hw_ila_1[xc7vx485t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7vx485t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7vx485t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7vx485t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7vx485t_0/hw_ila_1/Status=ILA_STATUS_1;],dashboard2=hw_vios[xc7vx485t_0/hw_vio_1=VIO_PROBES_1;xc7vx485t_0/hw_vio_2=VIO_PROBES_2;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7vx485t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/sjtrax.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="i_ila_uart" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_MODE" value="BASIC_ONLY"/>
+      <Properties Property="CONTROL.TSM_FILE" value="C:/Projects/sjtrax/src/uart.tsm"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="i_uartmon/i_ila" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_MODE" value="TRIG_IN_ONLY"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="notesmongen.i_notes_mon_ila" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_MODE" value="TRIG_IN_ONLY"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="i_uartmon/s_vio_probe_in0" gui_info="hw_vios/hw_vio_1=0"/>
+    <Object name="i_uartmon/s_vio_probe_in1" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="i_uartmon/s_vio_probe_out0" gui_info="hw_vios/hw_vio_1=2"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/dout[8]"/>
+        <net name="i_uartmon/dout[7]"/>
+        <net name="i_uartmon/dout[6]"/>
+        <net name="i_uartmon/dout[5]"/>
+        <net name="i_uartmon/dout[4]"/>
+        <net name="i_uartmon/dout[3]"/>
+        <net name="i_uartmon/dout[2]"/>
+        <net name="i_uartmon/dout[1]"/>
+        <net name="i_uartmon/dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/dout_1[17]"/>
+        <net name="i_uartmon/dout_1[16]"/>
+        <net name="i_uartmon/dout_1[15]"/>
+        <net name="i_uartmon/dout_1[14]"/>
+        <net name="i_uartmon/dout_1[13]"/>
+        <net name="i_uartmon/dout_1[12]"/>
+        <net name="i_uartmon/dout_1[11]"/>
+        <net name="i_uartmon/dout_1[10]"/>
+        <net name="i_uartmon/dout_1[9]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/dout_2[31]"/>
+        <net name="i_uartmon/dout_2[30]"/>
+        <net name="i_uartmon/dout_2[29]"/>
+        <net name="i_uartmon/dout_2[28]"/>
+        <net name="i_uartmon/dout_2[27]"/>
+        <net name="i_uartmon/dout_2[26]"/>
+        <net name="i_uartmon/dout_2[25]"/>
+        <net name="i_uartmon/dout_2[24]"/>
+        <net name="i_uartmon/dout_2[23]"/>
+        <net name="i_uartmon/dout_2[22]"/>
+        <net name="i_uartmon/dout_2[21]"/>
+        <net name="i_uartmon/dout_2[20]"/>
+        <net name="i_uartmon/dout_2[19]"/>
+        <net name="i_uartmon/dout_2[18]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/dout_3[52]"/>
+        <net name="i_uartmon/dout_3[51]"/>
+        <net name="i_uartmon/dout_3[50]"/>
+        <net name="i_uartmon/dout_3[49]"/>
+        <net name="i_uartmon/dout_3[48]"/>
+        <net name="i_uartmon/dout_3[47]"/>
+        <net name="i_uartmon/dout_3[46]"/>
+        <net name="i_uartmon/dout_3[45]"/>
+        <net name="i_uartmon/dout_3[44]"/>
+        <net name="i_uartmon/dout_3[43]"/>
+        <net name="i_uartmon/dout_3[42]"/>
+        <net name="i_uartmon/dout_3[41]"/>
+        <net name="i_uartmon/dout_3[40]"/>
+        <net name="i_uartmon/dout_3[39]"/>
+        <net name="i_uartmon/dout_3[38]"/>
+        <net name="i_uartmon/dout_3[37]"/>
+        <net name="i_uartmon/dout_3[36]"/>
+        <net name="i_uartmon/dout_3[35]"/>
+        <net name="i_uartmon/dout_3[34]"/>
+        <net name="i_uartmon/dout_3[33]"/>
+        <net name="i_uartmon/dout_3[32]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/dout_4[73]"/>
+        <net name="i_uartmon/dout_4[72]"/>
+        <net name="i_uartmon/dout_4[71]"/>
+        <net name="i_uartmon/dout_4[70]"/>
+        <net name="i_uartmon/dout_4[69]"/>
+        <net name="i_uartmon/dout_4[68]"/>
+        <net name="i_uartmon/dout_4[67]"/>
+        <net name="i_uartmon/dout_4[66]"/>
+        <net name="i_uartmon/dout_4[65]"/>
+        <net name="i_uartmon/dout_4[64]"/>
+        <net name="i_uartmon/dout_4[63]"/>
+        <net name="i_uartmon/dout_4[62]"/>
+        <net name="i_uartmon/dout_4[61]"/>
+        <net name="i_uartmon/dout_4[60]"/>
+        <net name="i_uartmon/dout_4[59]"/>
+        <net name="i_uartmon/dout_4[58]"/>
+        <net name="i_uartmon/dout_4[57]"/>
+        <net name="i_uartmon/dout_4[56]"/>
+        <net name="i_uartmon/dout_4[55]"/>
+        <net name="i_uartmon/dout_4[54]"/>
+        <net name="i_uartmon/dout_4[53]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data[31]"/>
+        <net name="i_uartmon/s_mon_data[30]"/>
+        <net name="i_uartmon/s_mon_data[29]"/>
+        <net name="i_uartmon/s_mon_data[28]"/>
+        <net name="i_uartmon/s_mon_data[27]"/>
+        <net name="i_uartmon/s_mon_data[26]"/>
+        <net name="i_uartmon/s_mon_data[25]"/>
+        <net name="i_uartmon/s_mon_data[24]"/>
+        <net name="i_uartmon/s_mon_data[23]"/>
+        <net name="i_uartmon/s_mon_data[22]"/>
+        <net name="i_uartmon/s_mon_data[21]"/>
+        <net name="i_uartmon/s_mon_data[20]"/>
+        <net name="i_uartmon/s_mon_data[19]"/>
+        <net name="i_uartmon/s_mon_data[18]"/>
+        <net name="i_uartmon/s_mon_data[17]"/>
+        <net name="i_uartmon/s_mon_data[16]"/>
+        <net name="i_uartmon/s_mon_data[15]"/>
+        <net name="i_uartmon/s_mon_data[14]"/>
+        <net name="i_uartmon/s_mon_data[13]"/>
+        <net name="i_uartmon/s_mon_data[12]"/>
+        <net name="i_uartmon/s_mon_data[11]"/>
+        <net name="i_uartmon/s_mon_data[10]"/>
+        <net name="i_uartmon/s_mon_data[9]"/>
+        <net name="i_uartmon/s_mon_data[8]"/>
+        <net name="i_uartmon/s_mon_data[7]"/>
+        <net name="i_uartmon/s_mon_data[6]"/>
+        <net name="i_uartmon/s_mon_data[5]"/>
+        <net name="i_uartmon/s_mon_data[4]"/>
+        <net name="i_uartmon/s_mon_data[3]"/>
+        <net name="i_uartmon/s_mon_data[2]"/>
+        <net name="i_uartmon/s_mon_data[1]"/>
+        <net name="i_uartmon/s_mon_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data[8]"/>
+        <net name="i_uartmon/s_mon_data[7]"/>
+        <net name="i_uartmon/s_mon_data[6]"/>
+        <net name="i_uartmon/s_mon_data[5]"/>
+        <net name="i_uartmon/s_mon_data[4]"/>
+        <net name="i_uartmon/s_mon_data[3]"/>
+        <net name="i_uartmon/s_mon_data[2]"/>
+        <net name="i_uartmon/s_mon_data[1]"/>
+        <net name="i_uartmon/s_mon_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data_1[17]"/>
+        <net name="i_uartmon/s_mon_data_1[16]"/>
+        <net name="i_uartmon/s_mon_data_1[15]"/>
+        <net name="i_uartmon/s_mon_data_1[14]"/>
+        <net name="i_uartmon/s_mon_data_1[13]"/>
+        <net name="i_uartmon/s_mon_data_1[12]"/>
+        <net name="i_uartmon/s_mon_data_1[11]"/>
+        <net name="i_uartmon/s_mon_data_1[10]"/>
+        <net name="i_uartmon/s_mon_data_1[9]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data_2[31]"/>
+        <net name="i_uartmon/s_mon_data_2[30]"/>
+        <net name="i_uartmon/s_mon_data_2[29]"/>
+        <net name="i_uartmon/s_mon_data_2[28]"/>
+        <net name="i_uartmon/s_mon_data_2[27]"/>
+        <net name="i_uartmon/s_mon_data_2[26]"/>
+        <net name="i_uartmon/s_mon_data_2[25]"/>
+        <net name="i_uartmon/s_mon_data_2[24]"/>
+        <net name="i_uartmon/s_mon_data_2[23]"/>
+        <net name="i_uartmon/s_mon_data_2[22]"/>
+        <net name="i_uartmon/s_mon_data_2[21]"/>
+        <net name="i_uartmon/s_mon_data_2[20]"/>
+        <net name="i_uartmon/s_mon_data_2[19]"/>
+        <net name="i_uartmon/s_mon_data_2[18]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data_3[52]"/>
+        <net name="i_uartmon/s_mon_data_3[51]"/>
+        <net name="i_uartmon/s_mon_data_3[50]"/>
+        <net name="i_uartmon/s_mon_data_3[49]"/>
+        <net name="i_uartmon/s_mon_data_3[48]"/>
+        <net name="i_uartmon/s_mon_data_3[47]"/>
+        <net name="i_uartmon/s_mon_data_3[46]"/>
+        <net name="i_uartmon/s_mon_data_3[45]"/>
+        <net name="i_uartmon/s_mon_data_3[44]"/>
+        <net name="i_uartmon/s_mon_data_3[43]"/>
+        <net name="i_uartmon/s_mon_data_3[42]"/>
+        <net name="i_uartmon/s_mon_data_3[41]"/>
+        <net name="i_uartmon/s_mon_data_3[40]"/>
+        <net name="i_uartmon/s_mon_data_3[39]"/>
+        <net name="i_uartmon/s_mon_data_3[38]"/>
+        <net name="i_uartmon/s_mon_data_3[37]"/>
+        <net name="i_uartmon/s_mon_data_3[36]"/>
+        <net name="i_uartmon/s_mon_data_3[35]"/>
+        <net name="i_uartmon/s_mon_data_3[34]"/>
+        <net name="i_uartmon/s_mon_data_3[33]"/>
+        <net name="i_uartmon/s_mon_data_3[32]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq21&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq21&apos;hXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_mon_data_4[73]"/>
+        <net name="i_uartmon/s_mon_data_4[72]"/>
+        <net name="i_uartmon/s_mon_data_4[71]"/>
+        <net name="i_uartmon/s_mon_data_4[70]"/>
+        <net name="i_uartmon/s_mon_data_4[69]"/>
+        <net name="i_uartmon/s_mon_data_4[68]"/>
+        <net name="i_uartmon/s_mon_data_4[67]"/>
+        <net name="i_uartmon/s_mon_data_4[66]"/>
+        <net name="i_uartmon/s_mon_data_4[65]"/>
+        <net name="i_uartmon/s_mon_data_4[64]"/>
+        <net name="i_uartmon/s_mon_data_4[63]"/>
+        <net name="i_uartmon/s_mon_data_4[62]"/>
+        <net name="i_uartmon/s_mon_data_4[61]"/>
+        <net name="i_uartmon/s_mon_data_4[60]"/>
+        <net name="i_uartmon/s_mon_data_4[59]"/>
+        <net name="i_uartmon/s_mon_data_4[58]"/>
+        <net name="i_uartmon/s_mon_data_4[57]"/>
+        <net name="i_uartmon/s_mon_data_4[56]"/>
+        <net name="i_uartmon/s_mon_data_4[55]"/>
+        <net name="i_uartmon/s_mon_data_4[54]"/>
+        <net name="i_uartmon/s_mon_data_4[53]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="s_ila_uart_probe0[3]"/>
+        <net name="s_ila_uart_probe0[2]"/>
+        <net name="s_ila_uart_probe0[1]"/>
+        <net name="s_ila_uart_probe0[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq42&apos;hXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq42&apos;bXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XX1X_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq42&apos;bXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XX1X_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="s_ila_uart_probe1[41]"/>
+        <net name="s_ila_uart_probe1[40]"/>
+        <net name="s_ila_uart_probe1[39]"/>
+        <net name="s_ila_uart_probe1[38]"/>
+        <net name="s_ila_uart_probe1[37]"/>
+        <net name="s_ila_uart_probe1[36]"/>
+        <net name="s_ila_uart_probe1[35]"/>
+        <net name="s_ila_uart_probe1[34]"/>
+        <net name="s_ila_uart_probe1[33]"/>
+        <net name="s_ila_uart_probe1[32]"/>
+        <net name="s_ila_uart_probe1[31]"/>
+        <net name="s_ila_uart_probe1[30]"/>
+        <net name="s_ila_uart_probe1[29]"/>
+        <net name="s_ila_uart_probe1[28]"/>
+        <net name="s_ila_uart_probe1[27]"/>
+        <net name="s_ila_uart_probe1[26]"/>
+        <net name="s_ila_uart_probe1[25]"/>
+        <net name="s_ila_uart_probe1[24]"/>
+        <net name="s_ila_uart_probe1[23]"/>
+        <net name="s_ila_uart_probe1[22]"/>
+        <net name="s_ila_uart_probe1[21]"/>
+        <net name="s_ila_uart_probe1[20]"/>
+        <net name="s_ila_uart_probe1[19]"/>
+        <net name="s_ila_uart_probe1[18]"/>
+        <net name="s_ila_uart_probe1[17]"/>
+        <net name="s_ila_uart_probe1[16]"/>
+        <net name="s_ila_uart_probe1[15]"/>
+        <net name="s_ila_uart_probe1[14]"/>
+        <net name="s_ila_uart_probe1[13]"/>
+        <net name="s_ila_uart_probe1[12]"/>
+        <net name="s_ila_uart_probe1[11]"/>
+        <net name="s_ila_uart_probe1[10]"/>
+        <net name="s_ila_uart_probe1[9]"/>
+        <net name="s_ila_uart_probe1[8]"/>
+        <net name="s_ila_uart_probe1[7]"/>
+        <net name="s_ila_uart_probe1[6]"/>
+        <net name="s_ila_uart_probe1[5]"/>
+        <net name="s_ila_uart_probe1[4]"/>
+        <net name="s_ila_uart_probe1[3]"/>
+        <net name="s_ila_uart_probe1[2]"/>
+        <net name="s_ila_uart_probe1[1]"/>
+        <net name="s_ila_uart_probe1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="s_notesmon_probe0[49]"/>
+        <net name="s_notesmon_probe0[48]"/>
+        <net name="s_notesmon_probe0[47]"/>
+        <net name="s_notesmon_probe0[46]"/>
+        <net name="s_notesmon_probe0[45]"/>
+        <net name="s_notesmon_probe0[44]"/>
+        <net name="s_notesmon_probe0[43]"/>
+        <net name="s_notesmon_probe0[42]"/>
+        <net name="s_notesmon_probe0[41]"/>
+        <net name="s_notesmon_probe0[40]"/>
+        <net name="s_notesmon_probe0[39]"/>
+        <net name="s_notesmon_probe0[38]"/>
+        <net name="s_notesmon_probe0[37]"/>
+        <net name="s_notesmon_probe0[36]"/>
+        <net name="s_notesmon_probe0[35]"/>
+        <net name="s_notesmon_probe0[34]"/>
+        <net name="s_notesmon_probe0[33]"/>
+        <net name="s_notesmon_probe0[32]"/>
+        <net name="s_notesmon_probe0[31]"/>
+        <net name="s_notesmon_probe0[30]"/>
+        <net name="s_notesmon_probe0[29]"/>
+        <net name="s_notesmon_probe0[28]"/>
+        <net name="s_notesmon_probe0[27]"/>
+        <net name="s_notesmon_probe0[26]"/>
+        <net name="s_notesmon_probe0[25]"/>
+        <net name="s_notesmon_probe0[24]"/>
+        <net name="s_notesmon_probe0[23]"/>
+        <net name="s_notesmon_probe0[22]"/>
+        <net name="s_notesmon_probe0[21]"/>
+        <net name="s_notesmon_probe0[20]"/>
+        <net name="s_notesmon_probe0[19]"/>
+        <net name="s_notesmon_probe0[18]"/>
+        <net name="s_notesmon_probe0[17]"/>
+        <net name="s_notesmon_probe0[16]"/>
+        <net name="s_notesmon_probe0[15]"/>
+        <net name="s_notesmon_probe0[14]"/>
+        <net name="s_notesmon_probe0[13]"/>
+        <net name="s_notesmon_probe0[12]"/>
+        <net name="s_notesmon_probe0[11]"/>
+        <net name="s_notesmon_probe0[10]"/>
+        <net name="s_notesmon_probe0[9]"/>
+        <net name="s_notesmon_probe0[8]"/>
+        <net name="s_notesmon_probe0[7]"/>
+        <net name="s_notesmon_probe0[6]"/>
+        <net name="s_notesmon_probe0[5]"/>
+        <net name="s_notesmon_probe0[4]"/>
+        <net name="s_notesmon_probe0[3]"/>
+        <net name="s_notesmon_probe0[2]"/>
+        <net name="s_notesmon_probe0[1]"/>
+        <net name="s_notesmon_probe0[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_bot/I1[31]"/>
+        <net name="i_bot/I1[30]"/>
+        <net name="i_bot/I1[29]"/>
+        <net name="i_bot/I1[28]"/>
+        <net name="i_bot/I1[27]"/>
+        <net name="i_bot/I1[26]"/>
+        <net name="i_bot/I1[25]"/>
+        <net name="i_bot/I1[24]"/>
+        <net name="i_bot/I1[23]"/>
+        <net name="i_bot/I1[22]"/>
+        <net name="i_bot/I1[21]"/>
+        <net name="i_bot/I1[20]"/>
+        <net name="i_bot/I1[19]"/>
+        <net name="i_bot/I1[18]"/>
+        <net name="i_bot/I1[17]"/>
+        <net name="i_bot/I1[16]"/>
+        <net name="i_bot/I1[15]"/>
+        <net name="i_bot/I1[14]"/>
+        <net name="i_bot/I1[13]"/>
+        <net name="i_bot/I1[12]"/>
+        <net name="i_bot/I1[11]"/>
+        <net name="i_bot/I1[10]"/>
+        <net name="i_bot/I1[9]"/>
+        <net name="i_bot/I1[8]"/>
+        <net name="i_bot/I1[7]"/>
+        <net name="i_bot/I1[6]"/>
+        <net name="i_bot/I1[5]"/>
+        <net name="i_bot/I1[4]"/>
+        <net name="i_bot/I1[3]"/>
+        <net name="i_bot/I1[2]"/>
+        <net name="i_bot/I1[1]"/>
+        <net name="i_bot/I1[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_bot/out[31]"/>
+        <net name="i_bot/out[30]"/>
+        <net name="i_bot/out[29]"/>
+        <net name="i_bot/out[28]"/>
+        <net name="i_bot/out[27]"/>
+        <net name="i_bot/out[26]"/>
+        <net name="i_bot/out[25]"/>
+        <net name="i_bot/out[24]"/>
+        <net name="i_bot/out[23]"/>
+        <net name="i_bot/out[22]"/>
+        <net name="i_bot/out[21]"/>
+        <net name="i_bot/out[20]"/>
+        <net name="i_bot/out[19]"/>
+        <net name="i_bot/out[18]"/>
+        <net name="i_bot/out[17]"/>
+        <net name="i_bot/out[16]"/>
+        <net name="i_bot/out[15]"/>
+        <net name="i_bot/out[14]"/>
+        <net name="i_bot/out[13]"/>
+        <net name="i_bot/out[12]"/>
+        <net name="i_bot/out[11]"/>
+        <net name="i_bot/out[10]"/>
+        <net name="i_bot/out[9]"/>
+        <net name="i_bot/out[8]"/>
+        <net name="i_bot/out[7]"/>
+        <net name="i_bot/out[6]"/>
+        <net name="i_bot/out[5]"/>
+        <net name="i_bot/out[4]"/>
+        <net name="i_bot/out[3]"/>
+        <net name="i_bot/out[2]"/>
+        <net name="i_bot/out[1]"/>
+        <net name="i_bot/out[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_bot/r_t[7]"/>
+        <net name="i_bot/r_t[6]"/>
+        <net name="i_bot/r_t[5]"/>
+        <net name="i_bot/r_t[4]"/>
+        <net name="i_bot/r_t[3]"/>
+        <net name="i_bot/r_t[2]"/>
+        <net name="i_bot/r_t[1]"/>
+        <net name="i_bot/r_t[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_bot/s_vio_botctrl_turn[7]"/>
+        <net name="i_bot/s_vio_botctrl_turn[6]"/>
+        <net name="i_bot/s_vio_botctrl_turn[5]"/>
+        <net name="i_bot/s_vio_botctrl_turn[4]"/>
+        <net name="i_bot/s_vio_botctrl_turn[3]"/>
+        <net name="i_bot/s_vio_botctrl_turn[2]"/>
+        <net name="i_bot/s_vio_botctrl_turn[1]"/>
+        <net name="i_bot/s_vio_botctrl_turn[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:255,0,0,;LED_High:0,0,255,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_vio_probe_in0"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:0,255,0,;LED_High:255,0,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_vio_probe_in1"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="s_init_mon[7]"/>
+        <net name="s_init_mon[6]"/>
+        <net name="s_init_mon[5]"/>
+        <net name="s_init_mon[4]"/>
+        <net name="s_init_mon[3]"/>
+        <net name="s_init_mon[2]"/>
+        <net name="s_init_mon[1]"/>
+        <net name="s_init_mon[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="s_vio_uart_probe_in0[8]"/>
+        <net name="s_vio_uart_probe_in0[7]"/>
+        <net name="s_vio_uart_probe_in0[6]"/>
+        <net name="s_vio_uart_probe_in0[5]"/>
+        <net name="s_vio_uart_probe_in0[4]"/>
+        <net name="s_vio_uart_probe_in0[3]"/>
+        <net name="s_vio_uart_probe_in0[2]"/>
+        <net name="s_vio_uart_probe_in0[1]"/>
+        <net name="s_vio_uart_probe_in0[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Active_High;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="i_bot/s_vio_botctrl_trigger"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Toggle;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+      </probeOptions>
+      <nets>
+        <net name="i_uartmon/s_vio_probe_out0"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="10A"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="s_vio_uart_probe_out0[8]"/>
+        <net name="s_vio_uart_probe_out0[7]"/>
+        <net name="s_vio_uart_probe_out0[6]"/>
+        <net name="s_vio_uart_probe_out0[5]"/>
+        <net name="s_vio_uart_probe_out0[4]"/>
+        <net name="s_vio_uart_probe_out0[3]"/>
+        <net name="s_vio_uart_probe_out0[2]"/>
+        <net name="s_vio_uart_probe_out0[1]"/>
+        <net name="s_vio_uart_probe_out0[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_lookup_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_lookup" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/map_ready" type="logic">
+      <obj_property name="ElementShortName">map_ready</obj_property>
+      <obj_property name="ObjectShortName">map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/x_in" type="array">
+      <obj_property name="ElementShortName">x_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/y_in" type="array">
+      <obj_property name="ElementShortName">y_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/v_in" type="logic">
+      <obj_property name="ElementShortName">v_in</obj_property>
+      <obj_property name="ObjectShortName">v_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/v_out" type="array">
+      <obj_property name="ElementShortName">v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/v_v" type="logic">
+      <obj_property name="ElementShortName">v_v</obj_property>
+      <obj_property name="ObjectShortName">v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/v_err" type="logic">
+      <obj_property name="ElementShortName">v_err</obj_property>
+      <obj_property name="ObjectShortName">v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/req" type="logic">
+      <obj_property name="ElementShortName">req</obj_property>
+      <obj_property name="ObjectShortName">req</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/ack" type="logic">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/key" type="array">
+      <obj_property name="ElementShortName">key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/value" type="array">
+      <obj_property name="ElementShortName">value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/res" type="array">
+      <obj_property name="ElementShortName">res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/res_v" type="logic">
+      <obj_property name="ElementShortName">res_v</obj_property>
+      <obj_property name="ObjectShortName">res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_lookup/notfound" type="logic">
+      <obj_property name="ElementShortName">notfound</obj_property>
+      <obj_property name="ObjectShortName">notfound</obj_property>
+   </wvobject>
+</wave_config>

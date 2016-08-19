@@ -1,0 +1,2 @@
+Language File-Name      IP         Library         File-Path                                                          
+VHDL,    ila_notes.vhd, ila_notes, xil_defaultlib, ../../../../project_1.srcs/sources_1/ip/ila_notes/sim/ila_notes.vhd

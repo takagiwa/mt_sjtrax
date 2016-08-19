@@ -1,0 +1,1 @@
+-wto "ba9a2f5613954139a6250146efaba237" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "fifo_generator_v13_0_1" -L "blk_mem_gen_v8_3_1" -L "secureip" --snapshot "sim_bot2_behav" "xil_defaultlib.sim_bot2" -log "elaborate.log" 

@@ -1,0 +1,2 @@
+Language File-Name             IP                Library         File-Path                                                                        
+VHDL,    vio_uartmon_ctrl.vhd, vio_uartmon_ctrl, xil_defaultlib, ../../../../project_1.srcs/sources_1/ip/vio_uartmon_ctrl/sim/vio_uartmon_ctrl.vhd

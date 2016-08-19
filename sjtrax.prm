@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Projects\sjtrax//sjtrax.mcs -s 131072 -u 00000000 C:/Projects/sjtrax/project_1/project_1.runs/impl_1/sjtrax.bit -bpi_dc parallel -data_width 16 
+
+PROM C:\Projects\sjtrax\sjtrax.prm map: MON 14 SEP 19:19:10 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          131072K
+PROM start    0000:0000
+PROM end      07ff:ffff
+PROM checksum c4a03764
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0135:591b     Sep 14 19:01:58 2015 C:/Projects/sjtrax/project_1/project_1.runs/impl_1/sjtrax.bit

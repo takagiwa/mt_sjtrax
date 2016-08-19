@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_getaroundcolors_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_getaroundcolors" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="135" />
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/x_in" type="array">
+      <obj_property name="ElementShortName">x_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/y_in" type="array">
+      <obj_property name="ElementShortName">y_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/v_in" type="logic">
+      <obj_property name="ElementShortName">v_in</obj_property>
+      <obj_property name="ObjectShortName">v_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/lc" type="array">
+      <obj_property name="ElementShortName">lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">lc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rc" type="array">
+      <obj_property name="ElementShortName">rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/uc" type="array">
+      <obj_property name="ElementShortName">uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/dc" type="array">
+      <obj_property name="ElementShortName">dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/c_v" type="logic">
+      <obj_property name="ElementShortName">c_v</obj_property>
+      <obj_property name="ObjectShortName">c_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/map_ready" type="logic">
+      <obj_property name="ElementShortName">map_ready</obj_property>
+      <obj_property name="ObjectShortName">map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/req" type="array">
+      <obj_property name="ElementShortName">req[2:0]</obj_property>
+      <obj_property name="ObjectShortName">req[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/ack" type="array">
+      <obj_property name="ElementShortName">ack[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key" type="array">
+      <obj_property name="ElementShortName">key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/value" type="array">
+      <obj_property name="ElementShortName">value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/res" type="array">
+      <obj_property name="ElementShortName">res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/res_v" type="logic">
+      <obj_property name="ElementShortName">res_v</obj_property>
+      <obj_property name="ObjectShortName">res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/notfound" type="logic">
+      <obj_property name="ElementShortName">notfound</obj_property>
+      <obj_property name="ObjectShortName">notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_map_ready" type="logic">
+      <obj_property name="ElementShortName">color_map_ready</obj_property>
+      <obj_property name="ObjectShortName">color_map_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_req" type="array">
+      <obj_property name="ElementShortName">color_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_req[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_ack" type="array">
+      <obj_property name="ElementShortName">color_ack[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_ack[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key" type="array">
+      <obj_property name="ElementShortName">color_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_value" type="array">
+      <obj_property name="ElementShortName">color_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_wr_en" type="logic">
+      <obj_property name="ElementShortName">color_wr_en</obj_property>
+      <obj_property name="ObjectShortName">color_wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_rd_en" type="logic">
+      <obj_property name="ElementShortName">color_rd_en</obj_property>
+      <obj_property name="ObjectShortName">color_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_res" type="array">
+      <obj_property name="ElementShortName">color_res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">color_res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_res_v" type="logic">
+      <obj_property name="ElementShortName">color_res_v</obj_property>
+      <obj_property name="ObjectShortName">color_res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_notfound" type="logic">
+      <obj_property name="ElementShortName">color_notfound</obj_property>
+      <obj_property name="ObjectShortName">color_notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key_1" type="array">
+      <obj_property name="ElementShortName">key_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key_1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/key_2" type="array">
+      <obj_property name="ElementShortName">key_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key_2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key_1" type="array">
+      <obj_property name="ElementShortName">color_key_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key_1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_key_2" type="array">
+      <obj_property name="ElementShortName">color_key_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">color_key_2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/ignore" type="logic">
+      <obj_property name="ElementShortName">ignore</obj_property>
+      <obj_property name="ObjectShortName">ignore</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_full" type="logic">
+      <obj_property name="ElementShortName">color_full</obj_property>
+      <obj_property name="ObjectShortName">color_full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/color_ignore" type="logic">
+      <obj_property name="ElementShortName">color_ignore</obj_property>
+      <obj_property name="ObjectShortName">color_ignore</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider737">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_x" type="array">
+      <obj_property name="ElementShortName">s_lc_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lc_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_y" type="array">
+      <obj_property name="ElementShortName">s_lc_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lc_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_v_out" type="array">
+      <obj_property name="ElementShortName">s_lc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_lc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_lc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_lc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_lc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_x" type="array">
+      <obj_property name="ElementShortName">s_rc_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rc_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_y" type="array">
+      <obj_property name="ElementShortName">s_rc_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rc_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_v_out" type="array">
+      <obj_property name="ElementShortName">s_rc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_rc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_rc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_rc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_rc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_v_out_o" type="array">
+      <obj_property name="ElementShortName">s_rc_v_out_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rc_v_out_o[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_x" type="array">
+      <obj_property name="ElementShortName">s_uc_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_uc_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_y" type="array">
+      <obj_property name="ElementShortName">s_uc_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_uc_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_v_out" type="array">
+      <obj_property name="ElementShortName">s_uc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_uc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_uc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_uc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_uc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_uc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_v_out_o" type="array">
+      <obj_property name="ElementShortName">s_uc_v_out_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_uc_v_out_o[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_x" type="array">
+      <obj_property name="ElementShortName">s_dc_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dc_x[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_y" type="array">
+      <obj_property name="ElementShortName">s_dc_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dc_y[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_v_out" type="array">
+      <obj_property name="ElementShortName">s_dc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_dc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_dc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_dc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_dc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_v_out_o" type="array">
+      <obj_property name="ElementShortName">s_dc_v_out_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dc_v_out_o[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_key" type="array">
+      <obj_property name="ElementShortName">s_lc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_lc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_lc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_lc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_key" type="array">
+      <obj_property name="ElementShortName">s_rc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_rc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_rc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_rc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_key" type="array">
+      <obj_property name="ElementShortName">s_uc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_uc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_uc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_uc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_uc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_key" type="array">
+      <obj_property name="ElementShortName">s_dc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_dc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_dc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_dc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_key" type="array">
+      <obj_property name="ElementShortName">r_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_rd_en" type="logic">
+      <obj_property name="ElementShortName">r_rd_en</obj_property>
+      <obj_property name="ObjectShortName">r_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_lc" type="array">
+      <obj_property name="ElementShortName">r_lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_lc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_rc" type="array">
+      <obj_property name="ElementShortName">r_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_uc" type="array">
+      <obj_property name="ElementShortName">r_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_dc" type="array">
+      <obj_property name="ElementShortName">r_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_xc_v" type="array">
+      <obj_property name="ElementShortName">r_xc_v[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_xc_v[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_v" type="logic">
+      <obj_property name="ElementShortName">r_v</obj_property>
+      <obj_property name="ObjectShortName">r_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_x_in" type="array">
+      <obj_property name="ElementShortName">r_x_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_x_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_y_in" type="array">
+      <obj_property name="ElementShortName">r_y_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_y_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_v_in" type="logic">
+      <obj_property name="ElementShortName">r_v_in</obj_property>
+      <obj_property name="ObjectShortName">r_v_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_rc_v_out" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_rc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_rc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_rc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_rc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_rc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_rc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_rc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_rc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_rc_key" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_rc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_rc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_rc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_rc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_rc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_map_lookup_rc" type="array">
+      <obj_property name="ElementShortName">r_map_lookup_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_map_lookup_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_uc_v_out" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_uc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_uc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_uc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_uc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_uc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_uc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_uc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_uc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_uc_key" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_uc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_uc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_uc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_uc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_uc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_map_lookup_uc" type="array">
+      <obj_property name="ElementShortName">r_map_lookup_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_map_lookup_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_dc_v_out" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_dc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_dc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_dc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_dc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_dc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_dc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_dc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_dc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_dc_key" type="array">
+      <obj_property name="ElementShortName">s_map_lookup_dc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_dc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_map_lookup_dc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_map_lookup_dc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_map_lookup_dc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_map_lookup_dc" type="array">
+      <obj_property name="ElementShortName">r_map_lookup_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_map_lookup_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_map_stat" type="array">
+      <obj_property name="ElementShortName">r_map_stat[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_map_stat[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_map_done" type="array">
+      <obj_property name="ElementShortName">r_map_done[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_map_done[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_req" type="array">
+      <obj_property name="ElementShortName">r_color_req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_req[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_lc_v_out" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_lc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_lc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_lc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_lc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_lc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_lc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_lc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_lc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_lc_key" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_lc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_lc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_lc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_lc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_lc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_lookup_lc" type="array">
+      <obj_property name="ElementShortName">r_color_lookup_lc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_lookup_lc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_rc_v_out" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_rc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_rc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_rc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_rc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_rc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_rc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_rc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_rc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_rc_key" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_rc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_rc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_rc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_rc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_rc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_lookup_rc" type="array">
+      <obj_property name="ElementShortName">r_color_lookup_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_lookup_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_uc_v_out" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_uc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_uc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_uc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_uc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_uc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_uc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_uc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_uc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_uc_key" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_uc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_uc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_uc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_uc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_uc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_lookup_uc" type="array">
+      <obj_property name="ElementShortName">r_color_lookup_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_lookup_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_dc_v_out" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_dc_v_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_dc_v_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_dc_v_v" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_dc_v_v</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_dc_v_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_dc_v_err" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_dc_v_err</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_dc_v_err</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_dc_key" type="array">
+      <obj_property name="ElementShortName">s_color_lookup_dc_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_dc_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_lookup_dc_rd_en" type="logic">
+      <obj_property name="ElementShortName">s_color_lookup_dc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">s_color_lookup_dc_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_lookup_dc" type="array">
+      <obj_property name="ElementShortName">r_color_lookup_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_lookup_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_stat" type="array">
+      <obj_property name="ElementShortName">r_color_stat[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_stat[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_done" type="array">
+      <obj_property name="ElementShortName">r_color_done[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_done[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_opposite_rc" type="array">
+      <obj_property name="ElementShortName">s_color_opposite_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_opposite_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_opposite_uc" type="array">
+      <obj_property name="ElementShortName">s_color_opposite_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_opposite_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/s_color_opposite_dc" type="array">
+      <obj_property name="ElementShortName">s_color_opposite_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_color_opposite_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_rc" type="array">
+      <obj_property name="ElementShortName">r_color_rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_rc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_uc" type="array">
+      <obj_property name="ElementShortName">r_color_uc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_uc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_dc" type="array">
+      <obj_property name="ElementShortName">r_color_dc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_dc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_getaroundcolors/i_uut/r_color_v" type="array">
+      <obj_property name="ElementShortName">r_color_v[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color_v[1:0]</obj_property>
+   </wvobject>
+</wave_config>

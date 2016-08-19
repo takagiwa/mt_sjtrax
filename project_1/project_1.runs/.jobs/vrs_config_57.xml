@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="uart_tx_fifo_synth_1" LaunchDir="C:/Projects/sjtrax/project_1/project_1.runs/uart_tx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uartmon_fifo_synth_1" LaunchDir="C:/Projects/sjtrax/project_1/project_1.runs/uartmon_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_uartmon_ctrl_synth_1" LaunchDir="C:/Projects/sjtrax/project_1/project_1.runs/vio_uartmon_ctrl_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_uartmon_synth_1" LaunchDir="C:/Projects/sjtrax/project_1/project_1.runs/ila_uartmon_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Projects/sjtrax/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="uart_tx_fifo_synth_1"/>
+		<Parent Id="uartmon_fifo_synth_1"/>
+		<Parent Id="vio_uartmon_ctrl_synth_1"/>
+		<Parent Id="ila_uartmon_synth_1"/>
+	</Run>
+</Runs>
+

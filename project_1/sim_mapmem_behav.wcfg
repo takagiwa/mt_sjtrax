@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_mapmem_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_mapmem" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="33" />
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/clear" type="logic">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/key" type="array">
+      <obj_property name="ElementShortName">key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/value" type="array">
+      <obj_property name="ElementShortName">value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/res" type="array">
+      <obj_property name="ElementShortName">res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/res_v" type="logic">
+      <obj_property name="ElementShortName">res_v</obj_property>
+      <obj_property name="ObjectShortName">res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/notfound" type="logic">
+      <obj_property name="ElementShortName">notfound</obj_property>
+      <obj_property name="ObjectShortName">notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/ignore" type="logic">
+      <obj_property name="ElementShortName">ignore</obj_property>
+      <obj_property name="ObjectShortName">ignore</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider68">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_clear" type="logic">
+      <obj_property name="ElementShortName">r_clear</obj_property>
+      <obj_property name="ObjectShortName">r_clear</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_wea" type="logic">
+      <obj_property name="ElementShortName">r_wea</obj_property>
+      <obj_property name="ObjectShortName">r_wea</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_dina" type="array">
+      <obj_property name="ElementShortName">r_dina[19:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dina[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/s_wea" type="array">
+      <obj_property name="ElementShortName">s_wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/s_addra" type="array">
+      <obj_property name="ElementShortName">s_addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_addra[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/s_dina" type="array">
+      <obj_property name="ElementShortName">s_dina[19:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dina[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/s_douta" type="array">
+      <obj_property name="ElementShortName">s_douta[19:0]</obj_property>
+      <obj_property name="ObjectShortName">s_douta[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_find" type="logic">
+      <obj_property name="ElementShortName">r_find</obj_property>
+      <obj_property name="ObjectShortName">r_find</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_key" type="array">
+      <obj_property name="ElementShortName">r_key[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_key[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_value" type="array">
+      <obj_property name="ElementShortName">r_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_value[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_notfound" type="logic">
+      <obj_property name="ElementShortName">r_notfound</obj_property>
+      <obj_property name="ObjectShortName">r_notfound</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_find_d1" type="logic">
+      <obj_property name="ElementShortName">r_find_d1</obj_property>
+      <obj_property name="ObjectShortName">r_find_d1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_find_d2" type="logic">
+      <obj_property name="ElementShortName">r_find_d2</obj_property>
+      <obj_property name="ObjectShortName">r_find_d2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/c_r_pointer" type="array">
+      <obj_property name="ElementShortName">c_r_pointer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_r_pointer[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/c_w_pointer" type="array">
+      <obj_property name="ElementShortName">c_w_pointer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_w_pointer[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_res" type="array">
+      <obj_property name="ElementShortName">r_res[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_res[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_res_v" type="logic">
+      <obj_property name="ElementShortName">r_res_v</obj_property>
+      <obj_property name="ObjectShortName">r_res_v</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_full" type="logic">
+      <obj_property name="ElementShortName">r_full</obj_property>
+      <obj_property name="ObjectShortName">r_full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mapmem/uut/r_ignore" type="logic">
+      <obj_property name="ElementShortName">r_ignore</obj_property>
+      <obj_property name="ObjectShortName">r_ignore</obj_property>
+   </wvobject>
+</wave_config>

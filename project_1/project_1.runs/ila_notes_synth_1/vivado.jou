@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Aug 08 18:56:05 2016
+# Process ID: 13812
+# Current directory: C:/Projects/sjtrax/project_1/project_1.runs/ila_notes_synth_1
+# Command line: vivado.exe -log ila_notes.vds -mode batch -messageDb vivado.pb -notrace -source ila_notes.tcl
+# Log file: C:/Projects/sjtrax/project_1/project_1.runs/ila_notes_synth_1/ila_notes.vds
+# Journal file: C:/Projects/sjtrax/project_1/project_1.runs/ila_notes_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_notes.tcl -notrace

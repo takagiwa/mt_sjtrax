@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_mish_simple_arbiter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim_mish_simple_arbiter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/req" type="array">
+      <obj_property name="ElementShortName">req[15:0]</obj_property>
+      <obj_property name="ObjectShortName">req[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/ack" type="array">
+      <obj_property name="ElementShortName">ack[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider28">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/r_req" type="array">
+      <obj_property name="ElementShortName">r_req[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_req[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/r_flag" type="array">
+      <obj_property name="ElementShortName">r_flag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_flag[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/c_seq" type="other">
+      <obj_property name="ElementShortName">c_seq</obj_property>
+      <obj_property name="ObjectShortName">c_seq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/r_current_port" type="other">
+      <obj_property name="ElementShortName">r_current_port</obj_property>
+      <obj_property name="ObjectShortName">r_current_port</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/r_prev_port" type="other">
+      <obj_property name="ElementShortName">r_prev_port</obj_property>
+      <obj_property name="ObjectShortName">r_prev_port</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mish_simple_arbiter/uut/r_ack" type="array">
+      <obj_property name="ElementShortName">r_ack[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ack[15:0]</obj_property>
+   </wvobject>
+</wave_config>

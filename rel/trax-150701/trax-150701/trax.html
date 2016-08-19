@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Trax</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    
+    <!--
+    <script src="http://localhost/jquery/jquery.min.js" type="text/javascript"></script>
+    -->
+    
+
+    <script type="text/javascript">
+
+    
+// interval for reconnection to trax_httpd
+var auto_retry_interval = 1000;
+     
+var team_ids = {
+    '01': 'Console player 1',
+    '02': 'Console player 2',
+    '0X': 'Trax bot',
+
+    'jazzbeth': 'Jazzbeth',
+    'ypercube': 'Ypercube',
+    'kbalakri': 'Kbalakri',
+    'tsiegen': 'Tsiegen'
+};
+
+var img_url_base = "http://localhost/traxjp/img/micro-";
+//img_url_base = "http://lut.eee.u-ryukyu.ac.jp/traxjp/img/small-";
+img_url_base = "http://lut.eee.u-ryukyu.ac.jp/traxjp/img/micro-";
+
+var game_running = false;
+var auto_run = false;
+
+
+var is_on = [];
+
+function toggle(sw){
+    if (is_on[sw] == void 0) is_on[sw] = false;
+    
+    var selector_on = '#' + sw + ' .on';
+    var selector_off = '#' + sw + ' .off';
+    
+    if (is_on[sw] == true){
+        is_on[sw] = false;
+        $(selector_on ).css('display', 'none');
+        $(selector_off).css('display', 'block');
+    } else {
+        is_on[sw] = true;
+        $(selector_off).css('display', 'none');
+        $(selector_on ).css('display', 'block');
+    }
+
+
+    if(is_on['sw_a'] == true){
+        auto_run = true;
+        if (!game_running){
+	    $('#new_game_button').css('display', 'none');
+	    new_game();
+        }
+    } else {
+        auto_run = false;
+        if (!game_running){
+	    $('#new_game_button').css('display', 'inline');
+            
+        }
+        // auto AJAX call by new_game() will stop soon
+    }
+}
+
+function resize_board(rows){
+    var board_height = $(window).height() - $('#board').offset().top;
+    board_height -= 30; // margin
+    board_height -= rows * 5;
+    var cell_height = board_height / rows;
+    if (cell_height > 52) cell_height = 52;
+
+    $('#board td').css('width',  cell_height + 'px');
+    $('#board td').css('height', cell_height + 'px');
+
+    $('#board tr:first-child td').css('height',  '20px');
+    $('#board tr td:first-child').css('width', '20px');
+}
+
+function show_result(){
+    game_running = false;
+    if(is_on['sw_a']==true){
+        $('#new_game_button').css('display', 'none');
+        new_game();
+    } else {
+        $('#new_game_button').css('display', 'inline');
+    }
+    $('#result').css('display', 'block');
+}
+
+function hide_result(){
+    game_running = true;
+    $('#result').css('display', 'none');
+}
+     
+function get_next(){
+    $.ajax({
+        type: "GET",
+        url: "/", 
+        cache: false,
+        success: function(data){
+            got_one(data);
+        },
+        data: "",
+        error: function(XMLHttpRequest, textStatus, errorThrown){
+	    // because trax-httpd is not ready yet 
+            show_result();
+            $('BODY').append('<pre>AJAX Error: \n' +
+                             'Status: ' + XMLHttpRequest.status + '\n' +
+                             'StatusText: ' + XMLHttpRequest.statusText + '\n' +
+                             'Response: ' + XMLHttpRequest.responseText +
+                             '</pre>');
+        }
+    });
+}
+
+function new_game(){
+    $.ajax({url: "/",
+            cache: false,
+            success: function(data){ $('#log #moves').html(""); hide_result(); get_next(); },
+            error: function(){
+		if (auto_run){
+		    setTimeout(new_game(), auto_retry_interval); }
+	    }
+     });
+}
+     
+function got_one(data){
+    d = String(data);
+    
+    red_pattern ="\\[0m";
+    reg = new RegExp(red_pattern, "g"); // global match 
+    d = d.replace(reg,"");
+
+    var dl = d.split("\x0a");
+
+    var violations = [];
+    var game_result = '';
+
+    var row=1;
+    $('pre').text("");
+    var new_tile_x = [];
+    var new_tile_y = [];
+    var rows, cols;
+    for (var l=0; l<dl.length; l++){
+        $('pre').append(dl[l] + "\x0a");
+
+        if(dl[l].match(/^Players/)!=null){ // "Players" row
+            dl[l].match(/^Players: ([a-zA-Z0-9]+) \/ ([A-Za-z0-9]+)/);
+
+            var p1 = RegExp.$1;
+            var p2 = RegExp.$2;
+            console.log(dl[l] + " P1=" + p1 + " P2=" + p2);                            
+            $('h1 span.p1_name').text(team_ids[p1]);
+            $('h1 span.p2_name').text(team_ids[p2]);
+            $('h1 span.p1').text('(' + p1 + ')');
+            $('h1 span.p2').text('(' + p2 + ')');
+            $('#log span.p1').text(p1);
+            $('#log span.p2').text(p2);
+
+        }
+
+        // Violations
+        if(dl[l].match(/^\*\*\*\*/)!=null){
+            var vio = dl[l];
+            vio = vio.replace(/\*\*\*\*/gi, '');
+            vio = vio.replace(/^ /, '');
+            vio = vio.replace(/ $/, '');
+            violations.push(vio);
+        }
+        
+        // Game is over
+        if(dl[l].match(/^====/)!=null){
+            game_result = dl[l];
+            game_result = game_result.replace(/====/gi, '');
+        }
+
+        
+        if(dl[l].match(/^Turn/)!=null){
+            // "Turn" row
+            dl[l].match(/^Turn ([0-9]+) \(.*\). ([@A-Z]+[0-9]+[\/\\\+])\[X:([0-9]+), Y:([0-9]+), Tile:([\/\\\+])/);
+            var turn = RegExp.$1;
+            var move = RegExp.$2;
+            var xpos = RegExp.$3;
+            var ypos = RegExp.$4;
+            new_tile_x.push(xpos); new_tile_y.push(ypos);
+            console.log("Turn " + RegExp.$1 + "(" + RegExp.$2 + ") X: " + RegExp.$3 +
+                        ", Y: " + RegExp.$4 +
+                        ", Tile: " + RegExp.$4 + " \n");
+            $('#log #moves').append('<span>' + move + ' </span>');
+        }
+        
+        if(dl[l].match(/^Forced play/)!=null){
+            // "Forced play" row
+            dl[l].match(/^Forced play: .*\[X:([0-9]+), Y:([0-9]+)/);
+            var xpos = RegExp.$1;
+            var ypos = RegExp.$2;
+            new_tile_x.push(xpos); new_tile_y.push(ypos);
+            console.log("Forced play: X: " + RegExp.$1 +
+                        ", Y: " + RegExp.$2); 
+        }
+        
+        if(dl[l].match(/\|\@/)!=null){ // column list row
+            var cl = dl[l].split(/ +/);
+            cols = (cl.length-3);
+            
+            $('#board').html("<tr>");
+            for (var c=0; c<=cols; c++){
+              $('#board tr').append("<td>" +
+                                    (c==0 ? "" :
+                                     ((c>26) ?
+                                      (String.fromCharCode(0x40+(c-1)/26))
+                                      : "" )
+                                      + (String.fromCharCode(0x41+(c-1)%26))));
+            }
+        }
+        
+        if(dl[l].match(/[1-9][0-9]*\|/)!=null){ // tile rows
+            $('#board').append('<tr id="row' + row + '"><td>' + row);
+            rows = row;
+            
+            var c=0;
+            while(dl[l].charAt(c) != "|") c++;
+            c+=3;
+            
+            for(var col=0; col<cols; col++){
+                var tile=" ";
+                if(dl[l].charAt(c) == " "){ // empty cell
+                    c++;   
+                } else {
+                    var cc = dl[l].indexOf(" ", c);
+                    var t = dl[l].substring(c, cc);
+
+                    var img_url = img_url_base; 
+
+                    if (t.match(/\+/)!=null) img_url = img_url + 'pl-';
+                    if (t.match(/\//)!=null) img_url = img_url + 'sl-';
+                    if (t.match(/\\/)!=null) img_url = img_url + 'bs-';
+
+                    if (t.match(/31m/)!=null){ // red
+                        img_url = img_url + 'r.png';
+                    } else { // white
+                        img_url = img_url + 'w.png';
+                    }
+
+                    if (t.match(/4m/)==null){ // NOT loop or line
+                        tile = '<img class="tile" src="' + img_url + '">';
+                    } else {
+                        tile = '<img class="tile loopline" src="' + img_url + '">';
+                    }
+
+                    c = cc;
+                }
+                $('#row' + row).append('<td id="r'+row+'c'+(col+1)+'">' + tile);
+                c++; 
+            }
+            row++;
+        }
+    } // end of all inputs
+    for(var i=0; i<new_tile_x.length; i++){
+        var row = new_tile_y[i];
+        var col = new_tile_x[i];
+
+        if(row==0) row=1;
+        if(col==0) col=1;
+        $('#r' + row + 'c' + col + ' img').removeClass('tile');
+        $('#r' + row + 'c' + col + ' img').addClass('newtile');
+        
+    }
+    $('.tile').removeClass('tile');
+    $('.newtile').fadeIn(1000);
+
+    resize_board(rows);
+
+    // Game is over!
+    if (d.match(/====/)!=null){
+        // game is over
+        show_result();
+
+        var pcs = [];
+        pcs = game_result.match(/\[([A-Za-z0-9]+)\]/gi);
+        if (pcs != null){
+            for(var p=0; p<pcs.length; p++){
+                var id = pcs[p];
+                id = id.substr(1, id.length-2); // remove []
+                na = team_ids[id];
+                id = '['+id+']';
+                
+                game_result = game_result.replace(id, na, 'gi');
+            }
+        }
+        
+        $('#result #main_result').text(game_result);
+        $('#result #violations').text('');
+
+        if(violations.length != 0) $('#result #violations').append('<br>Reason: ');
+        $('#result #violations')
+        for (var v=0; v<violations.length; v++){
+            $('#result #violations').append(violations[v]);
+            if(v!=violations.length-1) $('#result #violations').append(', ');
+        }
+
+        $('#board img:not(.loopline)').fadeTo('slow', 0.5);
+        resize_board(rows);
+    }
+    else  get_next();
+}
+
+$(function(){
+    // initialize
+
+    get_next();
+     
+});
+    </script>
+    <style type="text/css"><!--
+    body { font-size: 12px; font-family: sans-serif; }
+
+
+     h1, h2 { border-radius: 8px; 
+       /* box-shadow: 0 0 2px #0000f4; */
+       border: solid 2px #aaf;
+       /* background: #003; */
+       text-align: center; padding: 3px;
+       color: #003; 
+
+     }
+     
+    h2 { margin-top: 0px; }
+
+
+    h1 .p1, h1 .p2 { font-size: 60%; } 
+    h2 .p1, h2 .p2 { font-weight: bold; }
+
+    #result p { text-align: center; }
+    #result #main_result { font-size: 140%; font-weight: bold; }
+    #result button { float: right; }
+
+    #control,
+    #log { width: 120px; float: left; }
+    #log span { width: 60px; display: inline-block; }
+    
+     #control { font-size: 10px; }
+     #control p { margin: 0px; padding: 0px; text-align: center;}
+ 
+    #header, 
+    #board_area,
+    #debug { margin-left: 130px; }
+
+    #board    { margin-left: auto; margin-right: auto; }
+    #board    { border-collapse: collapse; }
+    // "mini-"
+    //       #board td { border: 0px; padding: 0px; width: 52px; height: 52px; }
+    // "micro-" 
+    //       #board td { border: 0px; padding: 0px; width: 32px; height: 32px; }
+    #board td { border: 0px; padding: 0px; width: 22px; height: 22px; }
+    #board tr:first-child td { height: 20px; }
+    #board tr td:first-child { width: 20px; }
+    #board td img          { width: 100%; }
+    #board td img          { border: 1px solid white; text-align: center;}
+    #board td img.loopline { border: 1px solid green; }
+    #board td img.tile     { display: none; }
+    #board td img.newtile  { display: none; }
+
+
+     /* ------------------------------------------------------------
+      css toggle switch stuff */
+
+     .switch{
+       position: absolute;
+       border: 2px solid #003;
+       border-radius: 20px;
+       width: 71px;
+       height: 36px;
+     }
+
+     .switch .on_button, .switch .off_button {
+       position: absolute;
+       top: 4px;
+       width: 24px;
+       bottom: 4px;
+       right: 39px;
+       background-color: #fff;
+       border: 2px solid #666;
+       border-radius: 17px; 
+     }
+     
+     .switch .on_button{
+       left: 39px; }
+     
+     .switch .on_text, .switch .off_text {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       right: 6px;
+       line-height: 36px;
+       text-align: center;
+       font-size: 14px;
+       width: 28px;
+       color: #003;
+     }
+
+     .switch .on_text {
+       left: 6px; }
+
+     .switch .on, .switch .off{
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       line-height: 36px;
+       text-align: center;
+       
+       border-radius: 19px;
+     }
+
+     .switch .off {
+       background: #aaa;
+     }
+     
+    .switch .on {
+      background: #cfc;
+      display: none;
+     }
+
+
+     -->
+    </style>
+
+  </head>
+  <body>
+
+    <div id="control">
+      <p>Auto start:</p>
+      <div style="padding-left: 22px;">
+      <div class="switch" id="sw_a" onclick="toggle('sw_a')" >
+        <div class="on">
+          <div class="on_text">ON</div>
+          <div class="on_button"></div> 
+        </div>
+        <div class="off">
+          <div class="off_button"></div> 
+          <div class="off_text">OFF</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div id="header">
+      <h1>Trax Game: 
+        <span class="p1_name"></span>
+        <span class="p1"></span> vs
+        <span class="p2_name"></span>
+        <span class="p2"></span>
+      </h1>
+      
+      <div id="result">
+        <h2>Result</h2>
+        <p>
+          <button id="new_game_button" onclick="new_game();">New Game</button>
+          <span id="main_result">Yay!</span>
+          <span id="violations">Yay!</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="log">
+      <h2>Log</h2>
+      <span class="p1"></span><span class="p2"></span>
+      <div id="moves">
+      </div>
+    </div>
+
+    <div id="board_area">
+      <h2>The Board</h2>
+      <table id="board">
+      </table>
+    </div>
+
+    <div id="debug">
+      <h2>Debug...</h2>
+      
+      <pre>
+      </pre>
+    </div>
+
+  </body>
+</html>

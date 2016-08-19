@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="VIO">
+        <Dashboard columnResizable="1" key="VIO" rowResizable="0" title="VIO">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="1" height="777"
+                layout="JideBoxLayout" vgap="6" width="1606">
+                <Gadget height="455" key="VIO Probes" name="VIO Probes" width="1606">
+                    <Probe core="hw_vio_2" name="i_bot/s_vio_botctrl_turn[7:0]"/>
+                    <Probe core="hw_vio_2" name="i_bot/s_vio_botctrl_trigger"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

@@ -1,0 +1,43 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto ba9a2f5613954139a6250146efaba237 --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_0_1 -L blk_mem_gen_v8_3_1 -L secureip --snapshot sim_bot2_behav xil_defaultlib.sim_bot2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture rtl of entity xil_defaultlib.board_area [board_area_default]
+Compiling architecture rtl of entity xil_defaultlib.mish_simple_arbiter [\mish_simple_arbiter(4)\]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture map_mem_arch of entity xil_defaultlib.map_mem [map_mem_default]
+Compiling architecture rtl of entity xil_defaultlib.map_mem_w [map_mem_w_default]
+Compiling architecture rtl of entity xil_defaultlib.mapmem [mapmem_default]
+Compiling architecture rtl of entity xil_defaultlib.lookup [lookup_default]
+Compiling architecture rtl of entity xil_defaultlib.opposite_color [opposite_color_default]
+Compiling architecture rtl of entity xil_defaultlib.getaroundcolors [getaroundcolors_default]
+Compiling architecture rtl of entity xil_defaultlib.is_isolated [is_isolated_default]
+Compiling architecture rtl of entity xil_defaultlib.is_prohibited_3 [is_prohibited_3_default]
+Compiling architecture rtl of entity xil_defaultlib.is_consistent_placement [is_consistent_placement_default]
+Compiling architecture rtl of entity xil_defaultlib.color_the_tile [\color_the_tile(3)\]
+Compiling architecture rtl of entity xil_defaultlib.make_mask [\make_mask(8)\]
+Compiling architecture rtl of entity xil_defaultlib.make_mask [\make_mask(9)\]
+Compiling architecture behavioral of entity xil_defaultlib.mish_prbs15p16 [mish_prbs15p16_default]
+Compiling architecture rtl of entity xil_defaultlib.rnd_note_gen [rnd_note_gen_default]
+Compiling architecture rtl of entity xil_defaultlib.bot2 [\bot2("0100000101000001")\]
+Compiling architecture sim of entity xil_defaultlib.sim_bot2
+Built simulation snapshot sim_bot2_behav

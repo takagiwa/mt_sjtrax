@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Projects/sjtrax/project_1/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="12421fs"></ZoomEndTime>
+      <Cursor1Time time="1000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="1" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="s_notesmon_probe0" type="array">
+      <obj_property name="ElementShortName">s_notesmon_probe0[49:0]</obj_property>
+      <obj_property name="ObjectShortName">s_notesmon_probe0[49:0]</obj_property>
+      <obj_property name="Radix">default</obj_property>
+   </wvobject>
+</wave_config>

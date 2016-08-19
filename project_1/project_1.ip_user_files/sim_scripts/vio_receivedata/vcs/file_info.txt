@@ -1,0 +1,2 @@
+Language File-Name            IP               Library         File-Path                                                                      
+VHDL,    vio_receivedata.vhd, vio_receivedata, xil_defaultlib, ../../../../project_1.srcs/sources_1/ip/vio_receivedata/sim/vio_receivedata.vhd
