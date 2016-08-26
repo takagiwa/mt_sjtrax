@@ -2,27 +2,6 @@
 
 require_once('mon.php');
 
-function conv2num($str = '') {
-  if (mb_strlen($str) == 0) {
-    return -1;
-  }
-
-  $a = str_split($str);
-  if (!is_array($a) || (count($a) == 0)) {
-    return -1;
-  }
-
-  $c = 1;
-  $r = 0;
-  foreach ($a as $l) {
-    if ($l == '@') {
-      return 0;
-    }
-    $r *= 26;
-    $r += ord($l) - 0x41 + 1; // A は 0 ではなく 1 だから
-  }
-  return $r;
-}
 
 
 
@@ -84,6 +63,8 @@ foreach ($file_list as $f) {
     if ($view) printf("   ----\n");
     fclose($fp);
 
+    mon($notes);
+
   } else {
     // not .trx
     // １行に１手
@@ -126,8 +107,14 @@ foreach ($file_list as $f) {
     }
     if ($view) printf("   ----\n");
     fclose($fp);
+
+    mon($notes);
   }
 }
+
+
+return;
+
 
 // 棋譜 ----------------------------------------------------------------------
 
@@ -180,5 +167,7 @@ foreach ($file_list as $f) {
   }
   if ($view) printf("   ----\n");
   fclose($fp);
+
+  mon($notes);
 
 }
