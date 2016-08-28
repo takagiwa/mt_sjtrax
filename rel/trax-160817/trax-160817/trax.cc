@@ -123,6 +123,8 @@ bool trax::place(move mo, int turn){
   int x = left +mo.x;
   int y = top  +mo.y;
 
+  std::cout << "  --> initial " << x << ", " << y << ", " << top << ", " << bottom << ", " << left << ", " << right << "\n";
+
   if (turn==1){
     if ( ! ( (mo.x == 0 && mo.y == 0) &&
              (mo.tile == '+' || mo.tile == '/') ) ){
@@ -195,7 +197,9 @@ bool trax::place(const int x, const int y, const char tile, int turn){
   scan_forced();
   trace_loop(x, y);
   trace_line();
-  
+
+  std::cout << "  --> ended " << top << ", " << bottom << ", " << left << ", " << right << "\n";
+
   return true;
 }
 
@@ -207,18 +211,22 @@ bool trax::scan_forced(){
       int lc, rc, uc, dc;
       get_around_colors(x, y, lc, rc, uc, dc);
 
+
+
       char forced = ' ';
       if ( (lc==uc && uc!=0 ) || (dc==rc && rc!=0 ) ) forced = '/'; 
       if ( (rc==uc && uc!=0 ) || (dc==lc && lc!=0 ) ) forced = '\\';
       if ( (lc==rc && rc!=0 && rc!=dc && rc!=uc) ||
-	   (uc==dc && dc!=0 && dc!=lc && dc!=lc) ) forced = '+';
+	       (uc==dc && dc!=0 && dc!=lc && dc!=lc) ) forced = '+';
+
+      if (0) std::cout << "x: " << x << " / y: " << y << " / u: " << uc << " / d: " << dc << " / l: " << lc << " / r: " << rc << " / t: " << forced << "\n";
 
       if(forced != ' '){
         if(!silent){
           std::cout << "Forced play: [X:" << x-left << ", Y:" << y-top
                     << ", Tile:" << forced << "] "; }
-	place(x, y, forced, -1);
-	return true; 
+          place(x, y, forced, -1);
+          return true; 
       }
     }
   }

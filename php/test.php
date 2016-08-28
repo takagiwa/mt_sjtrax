@@ -110,6 +110,8 @@ foreach ($file_list as $f) {
 
     mon($notes);
   }
+
+  break;
 }
 
 

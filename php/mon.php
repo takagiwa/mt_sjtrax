@@ -146,7 +146,111 @@ function is_consistent_placement($x, $y, $tile, $board, $board_color)
 }
 
 
+function place($mo_x, $mo_y, $tile, $turn, &$top, &$bottom, &$left, &$right, &$board, &$board_color, &$board_marks)
+{	
+	$x = $left + $mo_x;
+	$y = $top + $mo_y;
 
+	if ($turn > 0) {
+
+		// マップのサイズを更新
+		if ($mo_x == 0) {
+			$left -= 1;
+		}
+		if ($mo_y == 0) {
+			$top -= 1;
+		}
+		if ($right < $x) {
+			$right = $x;
+		}
+		if ($bottom < $y) {
+			$bottom = $y;
+		}
+
+		$res = lookup($board, $x, $y);
+		if ($res < 0) {
+			echo "**** INVALID PARAMETER at turn ".$turn." ****\n";
+			return false;
+		}
+		if ($res > 0) {
+			echo "*** ALREADY OCCUPIED! ****\n";
+			return false;
+		}
+
+		$board_marks[] = array($x, $y, 1);
+
+	}
+
+	$color = 0;
+	
+	$board[] = array($x, $y, $tile);
+
+	// check left, right, up, down
+	$ret = get_around_colors($x, $y, $board, $board_color);
+	
+	// Isolated
+	if (($ret['lc'] == $ret['rc']) && ($ret['rc'] == $ret['uc']) && ($ret['uc'] == $ret['dc']) && ($ret['dc'] == 0)) {
+		if ($turn != 1) {
+			echo "**** ISOLATED at turn ".$turn." ****\n";
+			if (0) {
+				var_dump($ret);
+				var_dump($board);
+				var_dump($board_color);
+			}
+			return false;
+		}
+		$color = 1;
+	}
+	
+	// Tiles around
+	
+	// 3 same color check
+	$ret2 = is_prohibited_3($x, $y, $board, $board_color);
+	if ($ret2) {
+		echo "**** 3 LINES WITH SAME COLOR! at turn ".$turn." ****\n";
+		return false;
+	}
+	
+	// tile requirement check
+	$ret2 = is_consistent_placement($x, $y, $tile, $board, $board_color);
+	if ($ret2) {
+		echo "**** IS NOT CONSISTEND PLACEMENT at turn ".$turn." **** \n";
+		return false;
+	}
+	
+	// color the tile
+	if ($color == 0) {
+		if ($tile == '+') {
+			if (($ret['lc'] == 1) || ($ret['rc'] == 1) || ($ret['uc'] == 2) || ($ret['dc'] == 2)) {
+				$color = 1;
+			} else {
+				$color = 2;
+			}
+		}
+		if ($tile == '/') {
+			if (($ret['lc'] == 1) || ($ret['uc'] == 1) || ($ret['dc'] == 2) || ($ret['rc'] == 2)) {
+				$color = 2;
+			} else {
+				$color = 1;
+			}
+		}
+		if ($tile == '\\') {
+			if (($ret['lc'] == 1) || ($ret['dc'] == 1) || ($ret['uc'] == 2) || ($ret['rc'] == 2)) {
+				$color = 2;
+			} else {
+				$color = 1;
+			}
+		}
+	}
+	if ($color == 0) {
+		echo "**** SOMETHING WRONG ****\n";
+		return false;
+	}
+	
+	$board_color[] = array($x, $y, $color);
+
+	return true;
+}
 
 
 
@@ -192,7 +296,11 @@ function mon($notes = array()) {
     echo "      ".$k." : ".conv2num($a[0])." / ".$a[1]." / ".$a[2]."\n";
     return true;
   }
-
+  if (0) {
+  	foreach ($notes as $n) {
+  		echo $n[0].$n[1].$n[2]." >> ".conv2num($n[0])."/".$n[1]."/".$n[2]."\n";
+  	}
+  }
 
   // t.clear_board()
   //  board.clear() = std::map<xy, char>
@@ -217,13 +325,15 @@ function mon($notes = array()) {
   $white_line = false;
 
   foreach ($notes as $k => $note) {
-    $mo = array('x' => $note[0], 'y' => $note[1], 'tile' => $note[2]);
+    $mo = array('x' => conv2num($note[0]), 'y' => $note[1], 'tile' => $note[2]);
     $turn = $k + 1;
 
     //------------------------------------------------------------------------
     // trax::place(move mo, int turn)
     $x = $left + $mo['x'];
     $y = $top  + $mo['y'];
+    
+    echo " --> initial ".$x.", ".$y.", ".$top.", ".$bottom.", ".$left.", ".$right."\n";
 
     if ($turn == 1) {
       if (!(($mo['x'] == 0 && $mo['y'] == 0) && ($mo['tile'] == '+' || $mo['tile'] == '/'))) {
@@ -231,6 +341,8 @@ function mon($notes = array()) {
         return false;
       }
     }
+
+    if (0) {
 
     if ($mo['x'] == 0) { $left -= 1; }
     if ($mo['y'] == 0) { $top -= 1; }
@@ -317,7 +429,66 @@ function mon($notes = array()) {
 
     $board_color[] = array($x, $y, $color);
 
+    }
+    
+    
+    $r = place($mo['x'], $mo['y'], $mo['tile'], $turn, $top, $bottom, $left, $right, $board, $board_color, $board_marks);
+    if ($r == false) {
+    	echo "*** Failed to place ***\n";
+    	return;
+    }
 
+    if (0) var_dump($board_color);
+
+	// trax::scan_forced()
+//	for ($ey = $top; $ey <= $bottom; $ey++) {
+//		for ($ex = $left; $ex <= $right; $ex++) {
+			for ($fy = $top; $fy <= $bottom; $fy++) {
+				for ($fx = $left; $fx <= $right; $fx++) {
+					$r = lookup($board_color, $fx, $fy);
+					if ($r != 0) {
+						continue;
+					}
+
+					$r = get_around_colors($fx, $fy, $board, $board_color);
+					$forced = ' ';
+					if ((($r['lc'] == $r['uc']) && ($r['uc'] != 0)) || (($r['dc'] == $r['rc']) && ($r['rc'] != 0))) {
+						$forced = '/';
+					}
+					if ((($r['rc'] == $r['uc']) && ($r['uc'] != 0)) || (($r['dc'] == $r['lc']) && ($r['lc'] != 0))) {
+						$forced = '\\';
+					}
+					if ((($r['lc'] == $r['rc']) && ($r['rc'] != 0) && ($r['rc'] != $r['dc']) && ($r['rc'] != $r['uc']))
+						|| (($r['uc'] == $r['dc']) && ($r['dc'] != 0) && ($r['dc'] != $r['lc']) && ($r['dc'] != $r['lc']))) {
+						$forced = '+';
+					}
+
+					if (0) echo "x: ".$fx." / y: ".$fy." / u: ".$r['uc']." / d: ".$r['dc']." / l: ".$r['lc']." / r: ".$r['rc']." / t: ".$forced."\n";
+					if ($forced == ' ') {
+						continue;
+					}
+
+					if (0) echo "Forced: ".$forced."\n";
+					if (1) echo "x: ".$fx." / y: ".$fy." / u: ".$r['uc']." / d: ".$r['dc']." / l: ".$r['lc']." / r: ".$r['rc']." / t: ".$forced."\n";
+						
+					$r = place($fx, $fy, $forced, -1, $top, $bottom, $left, $right, $board, $board_color, $board_marks);
+					if ($r == false) {
+						return false;
+					}
+					goto forced_end;
+				}
+			}
+//		}
+//	}
+forced_end:
+
+
+
+
+
+
+
+    echo "  --> ended ".$top.", ".$bottom.", ".$left.", ".$right."\n";
 
   }
 
