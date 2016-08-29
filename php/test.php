@@ -63,7 +63,10 @@ foreach ($file_list as $f) {
     if ($view) printf("   ----\n");
     fclose($fp);
 
-    mon($notes);
+    $r = mon($notes);
+    if ($r == false) {
+    	return;
+    }
 
   } else {
     // not .trx
@@ -108,10 +111,12 @@ foreach ($file_list as $f) {
     if ($view) printf("   ----\n");
     fclose($fp);
 
-    mon($notes);
+    $r = mon($notes);
+    if ($r == false) {
+    	return;
+    }
   }
 
-  break;
 }
 
 

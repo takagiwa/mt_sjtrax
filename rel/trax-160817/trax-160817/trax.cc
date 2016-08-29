@@ -152,6 +152,7 @@ bool trax::place(const int x, const int y, const char tile, int turn){
   int color = 0;
 
   board[xy(x,y)] = tile;
+  std::cout << "  --> place " << x << ", " << y << ", " << tile << "\n";
 
   // check left, right, up, down
   int lc, rc, uc, dc;
@@ -204,6 +205,7 @@ bool trax::place(const int x, const int y, const char tile, int turn){
 }
 
 bool trax::scan_forced(){
+  if (1) std::cout << "scan_forced()\n";
   for(int y=top; y<=bottom; y++){
     for(int x=left; x<=right; x++){
       if(lookup(board_color, x, y) != 0) continue;
@@ -225,6 +227,7 @@ bool trax::scan_forced(){
         if(!silent){
           std::cout << "Forced play: [X:" << x-left << ", Y:" << y-top
                     << ", Tile:" << forced << "] "; }
+          std::cout << "  --> place " << x << ", " << y << ", " << forced << "\n";
           place(x, y, forced, -1);
           return true; 
       }
