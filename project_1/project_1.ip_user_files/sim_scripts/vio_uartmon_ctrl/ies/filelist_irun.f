@@ -1,4 +1,0 @@
--makelib ies/xil_defaultlib \
-  "../../../../project_1.srcs/sources_1/ip/vio_uartmon_ctrl/sim/vio_uartmon_ctrl.vhd" \
--endlib
-

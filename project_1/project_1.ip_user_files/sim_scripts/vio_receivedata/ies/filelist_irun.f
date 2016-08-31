@@ -1,4 +1,0 @@
--makelib ies/xil_defaultlib \
-  "../../../../project_1.srcs/sources_1/ip/vio_receivedata/sim/vio_receivedata.vhd" \
--endlib
-
