@@ -1,7 +1,7 @@
 -- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2015.4.2 (win64) Build 1494164 Fri Feb 26 04:18:56 MST 2016
--- Date        : Tue Aug 02 10:29:23 2016
+-- Date        : Wed Aug 31 17:24:19 2016
 -- Host        : TAKAGIWA-L running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_uartmon_stub.vhdl

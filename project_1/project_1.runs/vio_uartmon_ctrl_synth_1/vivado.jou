@@ -2,8 +2,8 @@
 # Vivado v2015.4.2 (64-bit)
 # SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
 # IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
-# Start of session at: Tue Aug 02 10:25:31 2016
-# Process ID: 7352
+# Start of session at: Wed Aug 31 17:20:24 2016
+# Process ID: 36984
 # Current directory: C:/Projects/sjtrax/project_1/project_1.runs/vio_uartmon_ctrl_synth_1
 # Command line: vivado.exe -log vio_uartmon_ctrl.vds -mode batch -messageDb vivado.pb -notrace -source vio_uartmon_ctrl.tcl
 # Log file: C:/Projects/sjtrax/project_1/project_1.runs/vio_uartmon_ctrl_synth_1/vio_uartmon_ctrl.vds

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ila_uartmon_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1470101164">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_uartmon_synth_1/constrs_in.xml"/>
+<GenRun Id="ila_uartmon_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1472631445">
   <File Type="RDS-DCP" Name="ila_uartmon.dcp"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_uartmon_synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_uartmon_synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="ila_uartmon_utilization_synth.pb"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_uartmon_synth_1/ila_uartmon_synth_1.psg"/>
-  <File Type="PA-TCL" Name="ila_uartmon.tcl"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_uartmon_synth_1/sources.xml"/>
   <File Type="RDS-PROPCONSTRS" Name="ila_uartmon_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ila_uartmon.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_uartmon_synth_1/ila_uartmon_synth_1.psg"/>
   <File Type="RDS-RDS" Name="ila_uartmon.vds"/>
   <File Type="RDS-UTIL" Name="ila_uartmon_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ila_uartmon_timing_summary_synth.rpt"/>

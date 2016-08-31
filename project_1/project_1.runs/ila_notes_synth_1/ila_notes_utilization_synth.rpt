@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4.2 (win64) Build 1494164 Fri Feb 26 04:18:56 MST 2016
-| Date         : Mon Aug 08 18:59:04 2016
+| Date         : Wed Aug 31 17:26:19 2016
 | Host         : TAKAGIWA-L running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file ila_notes_utilization_synth.rpt -pb ila_notes_utilization_synth.pb
 | Design       : ila_notes

@@ -1,7 +1,7 @@
 // Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2015.4.2 (win64) Build 1494164 Fri Feb 26 04:18:56 MST 2016
-// Date        : Tue Aug 02 10:26:34 2016
+// Date        : Wed Aug 31 17:21:49 2016
 // Host        : TAKAGIWA-L running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_uartmon_ctrl/vio_uartmon_ctrl_sim_netlist.v

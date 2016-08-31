@@ -40,3 +40,4 @@ EAStep()
      fi
 }
 
+EAStep vivado -log uartmon_fifo.vds -m64 -mode batch -messageDb vivado.pb -notrace -source uartmon_fifo.tcl

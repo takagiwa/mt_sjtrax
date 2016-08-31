@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="vio_botctrl_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1470101210">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/vio_botctrl_synth_1/constrs_in.xml"/>
+<GenRun Id="vio_botctrl_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1472631446">
   <File Type="RDS-DCP" Name="vio_botctrl.dcp"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/vio_botctrl_synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/vio_botctrl_synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="vio_botctrl_utilization_synth.pb"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/vio_botctrl_synth_1/vio_botctrl_synth_1.psg"/>
-  <File Type="PA-TCL" Name="vio_botctrl.tcl"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/vio_botctrl_synth_1/sources.xml"/>
   <File Type="RDS-PROPCONSTRS" Name="vio_botctrl_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="vio_botctrl.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/vio_botctrl_synth_1/vio_botctrl_synth_1.psg"/>
   <File Type="RDS-RDS" Name="vio_botctrl.vds"/>
   <File Type="RDS-UTIL" Name="vio_botctrl_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="vio_botctrl_timing_summary_synth.rpt"/>

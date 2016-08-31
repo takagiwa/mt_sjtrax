@@ -2,8 +2,8 @@
 # Vivado v2015.4.2 (64-bit)
 # SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
 # IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
-# Start of session at: Tue Aug 02 10:27:16 2016
-# Process ID: 6164
+# Start of session at: Wed Aug 31 17:23:04 2016
+# Process ID: 50916
 # Current directory: C:/Projects/sjtrax/project_1/project_1.runs/vio_receivedata_synth_1
 # Command line: vivado.exe -log vio_receivedata.vds -mode batch -messageDb vivado.pb -notrace -source vio_receivedata.tcl
 # Log file: C:/Projects/sjtrax/project_1/project_1.runs/vio_receivedata_synth_1/vio_receivedata.vds

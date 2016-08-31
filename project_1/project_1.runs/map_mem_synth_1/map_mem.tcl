@@ -16,6 +16,7 @@ set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:vc707:part0:1.1 [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_ip C:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/map_mem/map_mem.xci
+set_property used_in_implementation false [get_files -all c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/map_mem/map_mem.dcp]
 set_property is_locked true [get_files C:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/map_mem/map_mem.xci]
 
 read_xdc dont_touch.xdc

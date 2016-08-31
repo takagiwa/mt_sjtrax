@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="vio_uartmon_ctrl_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1470101129">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/constrs_in.xml"/>
+<GenRun Id="vio_uartmon_ctrl_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1472631444">
   <File Type="RDS-DCP" Name="vio_uartmon_ctrl.dcp"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="vio_uartmon_ctrl_utilization_synth.pb"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/vio_uartmon_ctrl_synth_1.psg"/>
-  <File Type="PA-TCL" Name="vio_uartmon_ctrl.tcl"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/sources.xml"/>
   <File Type="RDS-PROPCONSTRS" Name="vio_uartmon_ctrl_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="vio_uartmon_ctrl.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/vio_uartmon_ctrl_synth_1/vio_uartmon_ctrl_synth_1.psg"/>
   <File Type="RDS-RDS" Name="vio_uartmon_ctrl.vds"/>
   <File Type="RDS-UTIL" Name="vio_uartmon_ctrl_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="vio_uartmon_ctrl_timing_summary_synth.rpt"/>

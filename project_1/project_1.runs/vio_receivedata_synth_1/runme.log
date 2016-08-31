@@ -21,9 +21,9 @@ Command: synth_design -top vio_receivedata -part xc7vx485tffg1761-2 -mode out_of
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
-INFO: [Common 17-1223] The version limit for your license is '2016.03' and will expire in -124 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2016.03' and will expire in -153 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 356.262 ; gain = 183.504
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 355.914 ; gain = 183.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vio_receivedata' [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/synth/vio_receivedata.vhd:63]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: DEFAULT - type: string 
@@ -2195,7 +2195,7 @@ INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_vio' (5#1) [c:/Project
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity vio_receivedata does not have driver. [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/synth/vio_receivedata.vhd:1381]
 INFO: [Synth 8-256] done synthesizing module 'vio_receivedata' (6#1) [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/synth/vio_receivedata.vhd:63]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 450.855 ; gain = 278.098
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 450.656 ; gain = 277.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2242,7 +2242,7 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0 [c:/P
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0 [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/synth/vio_receivedata.vhd:1384]
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0 [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/synth/vio_receivedata.vhd:1384]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 450.855 ; gain = 278.098
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 450.656 ; gain = 277.781
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2258,22 +2258,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 803.086 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 803.082 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx485tffg1761-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
@@ -2283,7 +2283,7 @@ INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5546] ROM "rd_en_int0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "rd_en_int0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2370,7 +2370,7 @@ BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 803.086 ; gain = 630.328
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -2382,9 +2382,9 @@ INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM becaus
 INFO: [Synth 8-5546] ROM "DECODER_INST/rd_en_int0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "DECODER_INST/rd_en_int0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Parallel Reinference  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 803.082 ; gain = 630.207
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2395,9 +2395,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 803.082 ; gain = 630.207
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2411,10 +2411,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2435,16 +2435,16 @@ INFO: [Synth 8-3332] Sequential element (\PROBE_IN_WIDTH_INST/probe_width_int_re
 INFO: [Synth 8-3332] Sequential element (\PROBE_IN_WIDTH_INST/probe_width_int_reg[1] ) is unused and will be removed from module vio_v3_0_10_vio.
 INFO: [Synth 8-3332] Sequential element (\PROBE_IN_WIDTH_INST/probe_width_int_reg[0] ) is unused and will be removed from module vio_v3_0_10_vio.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -2498,7 +2498,7 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2511,7 +2511,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2523,25 +2523,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2580,11 +2580,11 @@ Report Instance Areas:
 |6     |    PROBE_IN_WIDTH_INST |vio_v3_0_10_probe_width  |     8|
 +------+------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 803.082 ; gain = 630.207
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 803.086 ; gain = 177.105
-Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 803.086 ; gain = 630.328
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:41 . Memory (MB): peak = 803.082 ; gain = 177.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 803.082 ; gain = 630.207
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/vio_receivedata/vio_receivedata_ooc.xdc]
@@ -2598,7 +2598,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 57 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 803.086 ; gain = 539.461
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 803.082 ; gain = 539.406
 INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 803.086 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 02 10:28:18 2016...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 803.082 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 31 17:24:13 2016...

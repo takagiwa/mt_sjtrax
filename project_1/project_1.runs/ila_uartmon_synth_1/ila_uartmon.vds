@@ -2,8 +2,8 @@
 # Vivado v2015.4.2 (64-bit)
 # SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
 # IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
-# Start of session at: Tue Aug 02 10:26:05 2016
-# Process ID: 11056
+# Start of session at: Wed Aug 31 17:20:24 2016
+# Process ID: 36980
 # Current directory: C:/Projects/sjtrax/project_1/project_1.runs/ila_uartmon_synth_1
 # Command line: vivado.exe -log ila_uartmon.vds -mode batch -messageDb vivado.pb -notrace -source ila_uartmon.tcl
 # Log file: C:/Projects/sjtrax/project_1/project_1.runs/ila_uartmon_synth_1/ila_uartmon.vds
@@ -18,14 +18,14 @@ WARNING: [IP_Flow 19-3664] IP 'ila_uartmon' generated file not found 'c:/Project
 WARNING: [IP_Flow 19-3664] IP 'ila_uartmon' generated file not found 'c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_uartmon_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ila_uartmon' generated file not found 'c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_uartmon_sim_netlist.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ila_uartmon' generated file not found 'c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_uartmon_sim_netlist.vhdl'. Please regenerate to continue.
-read_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 295.234 ; gain = 85.691
+read_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 294.906 ; gain = 84.938
 Command: synth_design -top ila_uartmon -part xc7vx485tffg1761-2 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
-INFO: [Common 17-1223] The version limit for your license is '2016.03' and will expire in -124 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2016.03' and will expire in -153 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 389.109 ; gain = 215.957
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 390.184 ; gain = 217.813
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ila_uartmon' [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/synth/ila_uartmon.vhd:67]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=5,DATA_DEPTH=1024,PROBE0_WIDTH=9,PROBE0_MU_CNT=1,PROBE0_TYPE=0,PROBE1_WIDTH=9,PROBE1_MU_CNT=1,PROBE1_TYPE=0,PROBE2_WIDTH=14,PROBE2_MU_CNT=1,PROBE2_TYPE=0,PROBE3_WIDTH=21,PROBE3_MU_CNT=1,PROBE3_TYPE=0,PROBE4_WIDTH=21,PROBE4_MU_CNT=1,PROBE4_TYPE=0,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE5_TYPE=0,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE6_TYPE=0,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE7_TYPE=0,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE8_TYPE=0,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE9_TYPE=0,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE10_TYPE=0,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE11_TYPE=0,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE12_TYPE=0,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE13_TYPE=0,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE14_TYPE=0,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE15_TYPE=0,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE16_TYPE=0,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE17_TYPE=0,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE18_TYPE=0,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE19_TYPE=0,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE20_TYPE=0,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE21_TYPE=0,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE22_TYPE=0,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE23_TYPE=0,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE24_TYPE=0,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE25_TYPE=0,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE26_TYPE=0,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE27_TYPE=0,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE28_TYPE=0,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE29_TYPE=0,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE30_TYPE=0,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE31_TYPE=0,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE32_TYPE=0,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE33_TYPE=0,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE34_TYPE=0,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE35_TYPE=0,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE36_TYPE=0,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE37_TYPE=0,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE38_TYPE=0,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE39_TYPE=0,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE40_TYPE=0,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE41_TYPE=0,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE42_TYPE=0,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE43_TYPE=0,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE44_TYPE=0,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE45_TYPE=0,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE46_TYPE=0,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE47_TYPE=0,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE48_TYPE=0,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE49_TYPE=0,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE50_TYPE=0,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE51_TYPE=0,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE52_TYPE=0,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE53_TYPE=0,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE54_TYPE=0,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE55_TYPE=0,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE56_TYPE=0,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE57_TYPE=0,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE58_TYPE=0,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE59_TYPE=0,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE60_TYPE=0,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE61_TYPE=0,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE62_TYPE=0,PROBE63_WIDTH=1,PROBE63_MU_CNT=1,PROBE63_TYPE=0,PROBE64_WIDTH=1,PROBE64_MU_CNT=1,PROBE64_TYPE=0,PROBE65_WIDTH=1,PROBE65_MU_CNT=1,PROBE65_TYPE=0,PROBE66_WIDTH=1,PROBE66_MU_CNT=1,PROBE66_TYPE=0,PROBE67_WIDTH=1,PROBE67_MU_CNT=1,PROBE67_TYPE=0,PROBE68_WIDTH=1,PROBE68_MU_CNT=1,PROBE68_TYPE=0,PROBE69_WIDTH=1,PROBE69_MU_CNT=1,PROBE69_TYPE=0,PROBE70_WIDTH=1,PROBE70_MU_CNT=1,PROBE70_TYPE=0,PROBE71_WIDTH=1,PROBE71_MU_CNT=1,PROBE71_TYPE=0,PROBE72_WIDTH=1,PROBE72_MU_CNT=1,PROBE72_TYPE=0,PROBE73_WIDTH=1,PROBE73_MU_CNT=1,PROBE73_TYPE=0,PROBE74_WIDTH=1,PROBE74_MU_CNT=1,PROBE74_TYPE=0,PROBE75_WIDTH=1,PROBE75_MU_CNT=1,PROBE75_TYPE=0,PROBE76_WIDTH=1,PROBE76_MU_CNT=1,PROBE76_TYPE=0,PROBE77_WIDTH=1,PROBE77_MU_CNT=1,PROBE77_TYPE=0,PROBE78_WIDTH=1,PROBE78_MU_CNT=1,PROBE78_TYPE=0,PROBE79_WIDTH=1,PROBE79_MU_CNT=1,PROBE79_TYPE=0,PROBE80_WIDTH=1,PROBE80_MU_CNT=1,PROBE80_TYPE=0,PROBE81_WIDTH=1,PROBE81_MU_CNT=1,PROBE81_TYPE=0,PROBE82_WIDTH=1,PROBE82_MU_CNT=1,PROBE82_TYPE=0,PROBE83_WIDTH=1,PROBE83_MU_CNT=1,PROBE83_TYPE=0,PROBE84_WIDTH=1,PROBE84_MU_CNT=1,PROBE84_TYPE=0,PROBE85_WIDTH=1,PROBE85_MU_CNT=1,PROBE85_TYPE=0,PROBE86_WIDTH=1,PROBE86_MU_CNT=1,PROBE86_TYPE=0,PROBE87_WIDTH=1,PROBE87_MU_CNT=1,PROBE87_TYPE=0,PROBE88_WIDTH=1,PROBE88_MU_CNT=1,PROBE88_TYPE=0,PROBE89_WIDTH=1,PROBE89_MU_CNT=1,PROBE89_TYPE=0,PROBE90_WIDTH=1,PROBE90_MU_CNT=1,PROBE90_TYPE=0,PROBE91_WIDTH=1,PROBE91_MU_CNT=1,PROBE91_TYPE=0,PROBE92_WIDTH=1,PROBE92_MU_CNT=1,PROBE92_TYPE=0,PROBE93_WIDTH=1,PROBE93_MU_CNT=1,PROBE93_TYPE=0,PROBE94_WIDTH=1,PROBE94_MU_CNT=1,PROBE94_TYPE=0,PROBE95_WIDTH=1,PROBE95_MU_CNT=1,PROBE95_TYPE=0,PROBE96_WIDTH=1,PROBE96_MU_CNT=1,PROBE96_TYPE=0,PROBE97_WIDTH=1,PROBE97_MU_CNT=1,PROBE97_TYPE=0,PROBE98_WIDTH=1,PROBE98_MU_CNT=1,PROBE98_TYPE=0,PROBE99_WIDTH=1,PROBE99_MU_CNT=1,PROBE99_TYPE=0,PROBE100_WIDTH=1,PROBE100_MU_CNT=1,PROBE100_TYPE=0,PROBE101_WIDTH=1,PROBE101_MU_CNT=1,PROBE101_TYPE=0,PROBE102_WIDTH=1,PROBE102_MU_CNT=1,PROBE102_TYPE=0,PROBE103_WIDTH=1,PROBE103_MU_CNT=1,PROBE103_TYPE=0,PROBE104_WIDTH=1,PROBE104_MU_CNT=1,PROBE104_TYPE=0,PROBE105_WIDTH=1,PROBE105_MU_CNT=1,PROBE105_TYPE=0,PROBE106_WIDTH=1,PROBE106_MU_CNT=1,PROBE106_TYPE=0,PROBE107_WIDTH=1,PROBE107_MU_CNT=1,PROBE107_TYPE=0,PROBE108_WIDTH=1,PROBE108_MU_CNT=1,PROBE108_TYPE=0,PROBE109_WIDTH=1,PROBE109_MU_CNT=1,PROBE109_TYPE=0,PROBE110_WIDTH=1,PROBE110_MU_CNT=1,PROBE110_TYPE=0,PROBE111_WIDTH=1,PROBE111_MU_CNT=1,PROBE111_TYPE=0,PROBE112_WIDTH=1,PROBE112_MU_CNT=1,PROBE112_TYPE=0,PROBE113_WIDTH=1,PROBE113_MU_CNT=1,PROBE113_TYPE=0,PROBE114_WIDTH=1,PROBE114_MU_CNT=1,PROBE114_TYPE=0,PROBE115_WIDTH=1,PROBE115_MU_CNT=1,PROBE115_TYPE=0,PROBE116_WIDTH=1,PROBE116_MU_CNT=1,PROBE116_TYPE=0,PROBE117_WIDTH=1,PROBE117_MU_CNT=1,PROBE117_TYPE=0,PROBE118_WIDTH=1,PROBE118_MU_CNT=1,PROBE118_TYPE=0,PROBE119_WIDTH=1,PROBE119_MU_CNT=1,PROBE119_TYPE=0,PROBE120_WIDTH=1,PROBE120_MU_CNT=1,PROBE120_TYPE=0,PROBE121_WIDTH=1,PROBE121_MU_CNT=1,PROBE121_TYPE=0,PROBE122_WIDTH=1,PROBE122_MU_CNT=1,PROBE122_TYPE=0,PROBE123_WIDTH=1,PROBE123_MU_CNT=1,PROBE123_TYPE=0,PROBE124_WIDTH=1,PROBE124_MU_CNT=1,PROBE124_TYPE=0,PROBE125_WIDTH=1,PROBE125_MU_CNT=1,PROBE125_TYPE=0,PROBE126_WIDTH=1,PROBE126_MU_CNT=1,PROBE126_TYPE=0,PROBE127_WIDTH=1,PROBE127_MU_CNT=1,PROBE127_TYPE=0,PROBE128_WIDTH=1,PROBE128_MU_CNT=1,PROBE128_TYPE=0,PROBE129_WIDTH=1,PROBE129_MU_CNT=1,PROBE129_TYPE=0,PROBE130_WIDTH=1,PROBE130_MU_CNT=1,PROBE130_TYPE=0,PROBE131_WIDTH=1,PROBE131_MU_CNT=1,PROBE131_TYPE=0,PROBE132_WIDTH=1,PROBE132_MU_CNT=1,PROBE132_TYPE=0,PROBE133_WIDTH=1,PROBE133_MU_CNT=1,PROBE133_TYPE=0,PROBE134_WIDTH=1,PROBE134_MU_CNT=1,PROBE134_TYPE=0,PROBE135_WIDTH=1,PROBE135_MU_CNT=1,PROBE135_TYPE=0,PROBE136_WIDTH=1,PROBE136_MU_CNT=1,PROBE136_TYPE=0,PROBE137_WIDTH=1,PROBE137_MU_CNT=1,PROBE137_TYPE=0,PROBE138_WIDTH=1,PROBE138_MU_CNT=1,PROBE138_TYPE=0,PROBE139_WIDTH=1,PROBE139_MU_CNT=1,PROBE139_TYPE=0,PROBE140_WIDTH=1,PROBE140_MU_CNT=1,PROBE140_TYPE=0,PROBE141_WIDTH=1,PROBE141_MU_CNT=1,PROBE141_TYPE=0,PROBE142_WIDTH=1,PROBE142_MU_CNT=1,PROBE142_TYPE=0,PROBE143_WIDTH=1,PROBE143_MU_CNT=1,PROBE143_TYPE=0,PROBE144_WIDTH=1,PROBE144_MU_CNT=1,PROBE144_TYPE=0,PROBE145_WIDTH=1,PROBE145_MU_CNT=1,PROBE145_TYPE=0,PROBE146_WIDTH=1,PROBE146_MU_CNT=1,PROBE146_TYPE=0,PROBE147_WIDTH=1,PROBE147_MU_CNT=1,PROBE147_TYPE=0,PROBE148_WIDTH=1,PROBE148_MU_CNT=1,PROBE148_TYPE=0,PROBE149_WIDTH=1,PROBE149_MU_CNT=1,PROBE149_TYPE=0,PROBE150_WIDTH=1,PROBE150_MU_CNT=1,PROBE150_TYPE=0,PROBE151_WIDTH=1,PROBE151_MU_CNT=1,PROBE151_TYPE=0,PROBE152_WIDTH=1,PROBE152_MU_CNT=1,PROBE152_TYPE=0,PROBE153_WIDTH=1,PROBE153_MU_CNT=1,PROBE153_TYPE=0,PROBE154_WIDTH=1,PROBE154_MU_CNT=1,PROBE154_TYPE=0,PROBE155_WIDTH=1,PROBE155_MU_CNT=1,PROBE155_TYPE=0,PROBE156_WIDTH=1,PROBE156_MU_CNT=1,PROBE156_TYPE=0,PROBE157_WIDTH=1,PROBE157_MU_CNT=1,PROBE157_TYPE=0,PROBE158_WIDTH=1,PROBE158_MU_CNT=1,PROBE158_TYPE=0,PROBE159_WIDTH=1,PROBE159_MU_CNT=1,PROBE159_TYPE=0,PROBE160_WIDTH=1,PROBE160_MU_CNT=1,PROBE160_TYPE=0,PROBE161_WIDTH=1,PROBE161_MU_CNT=1,PROBE161_TYPE=0,PROBE162_WIDTH=1,PROBE162_MU_CNT=1,PROBE162_TYPE=0,PROBE163_WIDTH=1,PROBE163_MU_CNT=1,PROBE163_TYPE=0,PROBE164_WIDTH=1,PROBE164_MU_CNT=1,PROBE164_TYPE=0,PROBE165_WIDTH=1,PROBE165_MU_... (message truncated)
@@ -11527,7 +11527,7 @@ INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila' (45#1) [c:/Project
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_uartmon does not have driver. [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/synth/ila_uartmon.vhd:4216]
 INFO: [Synth 8-256] done synthesizing module 'ila_uartmon' (46#1) [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/synth/ila_uartmon.vhd:67]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:17 ; elapsed = 00:02:22 . Memory (MB): peak = 663.656 ; gain = 490.504
+Finished RTL Elaboration : Time (s): cpu = 00:02:13 ; elapsed = 00:02:42 . Memory (MB): peak = 663.305 ; gain = 490.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -11634,7 +11634,7 @@ INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[2] to constant 0 [c:/Projec
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[1] to constant 0 [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/synth/ila_uartmon.vhd:4219]
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[0] to constant 0 [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/synth/ila_uartmon.vhd:4219]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 663.656 ; gain = 490.504
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:13 ; elapsed = 00:02:43 . Memory (MB): peak = 663.305 ; gain = 490.934
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -11654,22 +11654,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 76 instances
   CFGLUT5 => SRLC32E: 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 868.336 ; gain = 0.938
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.166 . Memory (MB): peak = 868.027 ; gain = 0.883
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:35 ; elapsed = 00:02:41 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Constraint Validation : Time (s): cpu = 00:02:33 ; elapsed = 00:03:05 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx485tffg1761-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:35 ; elapsed = 00:02:41 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:33 ; elapsed = 00:03:05 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:36 ; elapsed = 00:02:42 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:34 ; elapsed = 00:03:07 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
 INFO: [Synth 8-5544] ROM "shift_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -11698,7 +11698,7 @@ INFO: [Synth 8-5546] ROM "read_addr" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5587] ROM size for "curr_read_block" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "read_en" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:39 ; elapsed = 00:02:45 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:37 ; elapsed = 00:03:10 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12170,7 +12170,7 @@ BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:39 ; elapsed = 00:02:45 . Memory (MB): peak = 868.336 ; gain = 695.184
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:38 ; elapsed = 00:03:11 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -12212,9 +12212,9 @@ INFO: [Synth 8-5587] ROM size for "ila_core_inst/xsdb_memory_read_inst/curr_read
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_en" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_addr" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:48 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:03:15 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:02:42 ; elapsed = 00:02:48 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Parallel Reinference  : Time (s): cpu = 00:02:41 ; elapsed = 00:03:15 . Memory (MB): peak = 868.027 ; gain = 695.656
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -12490,9 +12490,9 @@ INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_re
 INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[946] ) is unused and will be removed from module ila_v6_0_1_ila.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:02:52 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Area Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:03:18 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:45 ; elapsed = 00:02:52 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:45 ; elapsed = 00:03:18 . Memory (MB): peak = 868.027 ; gain = 695.656
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -12510,10 +12510,10 @@ WARNING: [Synth 8-3321] Empty from list for constraint at line 53 of c:/Projects
 WARNING: [Synth 8-3321] Empty from list for constraint at line 59 of c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_v6_0/constraints/ila.xdc. [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_v6_0/constraints/ila.xdc:59]
 WARNING: [Synth 8-3321] Empty from list for constraint at line 60 of c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_v6_0/constraints/ila.xdc. [c:/Projects/sjtrax/project_1/project_1.srcs/sources_1/ip/ila_uartmon/ila_v6_0/constraints/ila.xdc:60]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:02 ; elapsed = 00:03:09 . Memory (MB): peak = 868.336 ; gain = 695.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:07 ; elapsed = 00:03:42 . Memory (MB): peak = 868.027 ; gain = 695.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:11 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Timing Optimization : Time (s): cpu = 00:03:10 ; elapsed = 00:03:45 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12525,16 +12525,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:12 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Technology Mapping : Time (s): cpu = 00:03:12 ; elapsed = 00:03:47 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:05 ; elapsed = 00:03:12 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:12 ; elapsed = 00:03:47 . Memory (MB): peak = 877.492 ; gain = 705.121
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:05 ; elapsed = 00:03:12 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:12 ; elapsed = 00:03:47 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -12555,7 +12555,7 @@ INFO: [Synth 8-3295] tying undriven pin U0:clk_nobuf to constant 0
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[36] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished IO Insertion : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -12568,7 +12568,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12580,25 +12580,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -12791,11 +12791,11 @@ Report Instance Areas:
 |135   |      xsdb_memory_read_inst                                             |ltlib_v1_0_0_generic_memrd                      |   172|
 +------+------------------------------------------------------------------------+------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:02:48 . Memory (MB): peak = 877.219 ; gain = 377.305
-Synthesis Optimization Complete : Time (s): cpu = 00:03:06 ; elapsed = 00:03:13 . Memory (MB): peak = 877.219 ; gain = 704.066
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:03:00 . Memory (MB): peak = 877.492 ; gain = 377.863
+Synthesis Optimization Complete : Time (s): cpu = 00:03:13 ; elapsed = 00:03:48 . Memory (MB): peak = 877.492 ; gain = 705.121
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -12813,7 +12813,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 753 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:02 ; elapsed = 00:03:07 . Memory (MB): peak = 877.219 ; gain = 581.984
+synth_design: Time (s): cpu = 00:03:12 ; elapsed = 00:03:30 . Memory (MB): peak = 877.492 ; gain = 582.586
 INFO: [Coretcl 2-1174] Renamed 134 cell refs.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 877.219 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 02 10:29:24 2016...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.065 . Memory (MB): peak = 877.492 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 31 17:24:20 2016...
